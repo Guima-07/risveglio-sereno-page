@@ -99,20 +99,23 @@
       backdrop-filter: blur(24px);
       -webkit-backdrop-filter: blur(24px);
       border-bottom: 1px solid rgba(201, 168, 76, 0.08);
-      padding: 12px 20px;
+      padding: 10px 16px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 8px;
     }
 
     .logo {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       font-family: var(--serif);
-      font-size: 1.05rem;
+      font-size: 0.95rem;
       font-weight: 500;
       color: var(--text-primary);
+      min-width: 0;
+      flex-shrink: 1;
     }
 
     .logo-dot {
@@ -133,12 +136,14 @@
       color: var(--gold-light);
       border: 1px solid rgba(201, 168, 76, 0.25);
       font-family: var(--sans);
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       font-weight: 500;
-      padding: 8px 18px;
+      padding: 8px 14px;
       border-radius: 50px;
       text-decoration: none;
       transition: all 0.3s ease;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
     .header-cta:hover {
@@ -1066,26 +1071,27 @@
       backdrop-filter: blur(24px);
       -webkit-backdrop-filter: blur(24px);
       border-top: 1px solid rgba(201, 168, 76, 0.1);
-      padding: 12px 20px;
+      padding: 10px 16px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 12px;
       transform: translateY(100%);
       transition: transform 0.4s ease;
     }
 
     .sticky-bottom.visible { transform: translateY(0); }
 
-    .sb-info { flex: 1; }
+    .sb-info { flex: 1; min-width: 0; }
 
     .sb-name {
       font-family: var(--sans);
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       font-weight: 600;
     }
 
     .sb-price {
-      font-size: 0.7rem;
+      font-size: 0.68rem;
       color: var(--text-muted);
     }
 
@@ -1093,12 +1099,13 @@
       background: linear-gradient(135deg, var(--gold), #d4b65e);
       color: var(--bg-primary);
       font-family: var(--sans);
-      font-size: 0.84rem;
+      font-size: 0.82rem;
       font-weight: 600;
-      padding: 10px 22px;
+      padding: 10px 20px;
       border-radius: 50px;
       text-decoration: none;
       white-space: nowrap;
+      flex-shrink: 0;
     }
 
     /* ============================================
