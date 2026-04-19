@@ -3,1549 +3,1014 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <title>Risveglio Sereno — Il percorso di 90 giorni verso la pace interiore</title>
-  <meta name="description" content="Smetti di sopravvivere al rumore mentale. Un percorso di 90 giorni per trasformare l'ansia in chiarezza, la reattività in forza, il sonno frammentato in riposo profondo.">
-  
+  <title>Risveglio Sereno — Pace interiore in 90 giorni</title>
+  <meta name="description" content="Il percorso personalizzato di 90 giorni che trasforma l'ansia in calma. Prova gratis per 7 giorni.">
+
   <!-- Meta Pixel Code -->
   <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1607077463849547');
-  fbq('track', 'PageView');
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init','1607077463849547');fbq('track','PageView');
   </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=1607077463849547&ev=PageView&noscript=1"/></noscript>
-  <!-- End Meta Pixel Code -->
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1607077463849547&ev=PageView&noscript=1"/></noscript>
 
   <!-- Microsoft Clarity -->
   <script type="text/javascript">
-  (function(c,l,a,r,i,t,y){
-    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  })(window, document, "clarity", "script", "wctpcwte36");
+  (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window,document,"clarity","script","wctpcwte36");
   </script>
-  <!-- End Microsoft Clarity -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --bg-primary: #080806;
-      --bg-secondary: #0d0d0a;
-      --bg-tertiary: #111110;
-      --bg-card: rgba(255, 215, 140, 0.035);
-      --bg-card-border: rgba(201, 168, 76, 0.12);
-      --bg-card-hover: rgba(255, 215, 140, 0.06);
-      --gold: #c9a84c;
-      --gold-light: #e8d5a0;
-      --gold-bright: #f0dca4;
-      --gold-dim: rgba(201, 168, 76, 0.5);
-      --text-primary: #f5f0e8;
-      --text-secondary: rgba(245, 240, 232, 0.65);
-      --text-muted: rgba(245, 240, 232, 0.4);
-      --accent-red: #c0392b;
-      --accent-green: #6d9b6d;
-      --serif: 'Cormorant Garamond', Georgia, serif;
-      --sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --bg: #06060a;
+      --bg2: #0b0b12;
+      --bg3: #10101a;
+      --surface: rgba(255,255,255,0.04);
+      --border: rgba(255,255,255,0.07);
+      --gold: #c4a44e;
+      --gold-l: #e2cc8a;
+      --gold-d: rgba(196,164,78,0.15);
+      --gold-glow: rgba(196,164,78,0.08);
+      --text: #f0ece4;
+      --text2: rgba(240,236,228,0.6);
+      --text3: rgba(240,236,228,0.35);
+      --green: #5fa85f;
+      --red: #c44e4e;
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'Outfit', system-ui, sans-serif;
     }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-    
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
     body {
-      background: var(--bg-primary);
-      color: var(--text-primary);
-      font-family: var(--sans);
-      font-weight: 300;
-      line-height: 1.6;
-      overflow-x: hidden;
-      -webkit-font-smoothing: antialiased;
-      padding-bottom: 72px;
+      background:var(--bg);
+      color:var(--text);
+      font-family:var(--sans);
+      font-weight:300;
+      line-height:1.6;
+      overflow-x:hidden;
+      -webkit-font-smoothing:antialiased;
     }
 
-    /* ============================================
-       PARTICLE / STAR BACKGROUND
-    ============================================ */
-    .stars-bg {
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      z-index: 0;
-      pointer-events: none;
-      overflow: hidden;
+    /* ── NAV ── */
+    nav {
+      position:fixed; top:0; left:0; right:0; z-index:100;
+      background:rgba(6,6,10,0.85);
+      backdrop-filter:blur(20px);
+      -webkit-backdrop-filter:blur(20px);
+      padding:10px 16px;
+      display:flex; align-items:center; justify-content:space-between;
+      border-bottom:1px solid var(--border);
+    }
+    .nav-brand {
+      font-family:var(--serif);
+      font-size:0.95rem;
+      font-weight:500;
+      display:flex; align-items:center; gap:8px;
+    }
+    .nav-dot {
+      width:8px; height:8px; border-radius:50%;
+      background:var(--gold);
+      box-shadow:0 0 12px rgba(196,164,78,0.5);
+    }
+    .nav-cta {
+      font-size:0.72rem; font-weight:500;
+      padding:7px 14px; border-radius:50px;
+      background:var(--gold); color:var(--bg);
+      text-decoration:none; white-space:nowrap;
     }
 
-    .star {
-      position: absolute;
-      width: 2px;
-      height: 2px;
-      background: rgba(232, 213, 160, 0.4);
-      border-radius: 50%;
-      animation: twinkle var(--dur, 4s) ease-in-out infinite;
-      animation-delay: var(--delay, 0s);
-    }
-
-    @keyframes twinkle {
-      0%, 100% { opacity: 0.1; }
-      50% { opacity: 0.6; }
-    }
-
-    /* ============================================
-       STICKY HEADER
-    ============================================ */
-    .sticky-header {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      background: rgba(8, 8, 6, 0.88);
-      backdrop-filter: blur(24px);
-      -webkit-backdrop-filter: blur(24px);
-      border-bottom: 1px solid rgba(201, 168, 76, 0.08);
-      padding: 10px 16px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 8px;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-family: var(--serif);
-      font-size: 0.95rem;
-      font-weight: 500;
-      color: var(--text-primary);
-      min-width: 0;
-      flex-shrink: 1;
-    }
-
-    .logo-dot {
-      width: 10px; height: 10px;
-      border-radius: 50%;
-      background: radial-gradient(circle, var(--gold-light) 0%, var(--gold) 100%);
-      box-shadow: 0 0 10px rgba(201, 168, 76, 0.5);
-      animation: dotPulse 3s ease-in-out infinite;
-    }
-
-    @keyframes dotPulse {
-      0%, 100% { box-shadow: 0 0 8px rgba(201, 168, 76, 0.4); }
-      50% { box-shadow: 0 0 16px rgba(201, 168, 76, 0.7); }
-    }
-
-    .header-cta {
-      background: rgba(201, 168, 76, 0.12);
-      color: var(--gold-light);
-      border: 1px solid rgba(201, 168, 76, 0.25);
-      font-family: var(--sans);
-      font-size: 0.75rem;
-      font-weight: 500;
-      padding: 8px 14px;
-      border-radius: 50px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-
-    .header-cta:hover {
-      background: rgba(201, 168, 76, 0.2);
-      border-color: rgba(201, 168, 76, 0.4);
-    }
-
-    /* ============================================
-       GLOBAL
-    ============================================ */
-    .content-wrap {
-      position: relative;
-      z-index: 1;
-    }
-
-    section {
-      padding: 80px 24px;
-      max-width: 680px;
-      margin: 0 auto;
-      position: relative;
-    }
-
-    .section-label {
-      font-family: var(--sans);
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 14px;
-      text-align: center;
-    }
-
-    .section-title {
-      font-family: var(--serif);
-      font-size: clamp(1.8rem, 5vw, 2.5rem);
-      font-weight: 600;
-      line-height: 1.15;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .section-title em {
-      font-style: italic;
-      color: var(--gold-light);
-    }
-
-    .section-subtitle {
-      font-family: var(--serif);
-      font-size: 1.05rem;
-      line-height: 1.7;
-      color: var(--text-secondary);
-      text-align: center;
-      font-style: italic;
-      max-width: 500px;
-      margin: 0 auto;
-    }
-
-    /* ============================================
-       DIVIDER GLOW
-    ============================================ */
-    .section-divider {
-      height: 1px;
-      max-width: 680px;
-      margin: 0 auto;
-      background: linear-gradient(90deg, transparent 0%, rgba(201, 168, 76, 0.2) 50%, transparent 100%);
-    }
-
-    /* ============================================
-       HERO
-    ============================================ */
+    /* ── HERO ── */
     .hero {
-      padding-top: 80px;
-      padding-bottom: 24px;
-      text-align: center;
-      position: relative;
+      padding:76px 20px 40px;
+      max-width:440px; margin:0 auto;
+      text-align:center;
+      position:relative;
     }
-
-    .hero-glow {
-      position: absolute;
-      top: 30%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 400px;
-      height: 400px;
-      background: radial-gradient(circle, rgba(201, 168, 76, 0.1) 0%, rgba(201, 168, 76, 0.04) 30%, rgba(201, 168, 76, 0.01) 50%, transparent 70%);
-      border-radius: 50%;
-      pointer-events: none;
-      animation: heroGlow 8s ease-in-out infinite;
+    .hero::before {
+      content:'';
+      position:absolute; top:0; left:50%; transform:translateX(-50%);
+      width:500px; height:500px;
+      background:radial-gradient(circle, var(--gold-glow) 0%, transparent 60%);
+      pointer-events:none;
     }
-
-    @keyframes heroGlow {
-      0%, 100% { opacity: 0.7; transform: translate(-50%, -55%) scale(1); }
-      50% { opacity: 1; transform: translate(-50%, -55%) scale(1.08); }
+    .hero-badge {
+      display:inline-flex; align-items:center; gap:6px;
+      padding:6px 14px; border-radius:50px;
+      background:var(--gold-d);
+      border:1px solid rgba(196,164,78,0.2);
+      font-size:0.68rem; font-weight:500;
+      color:var(--gold-l);
+      margin-bottom:18px;
+      letter-spacing:0.04em;
     }
-
-    .hero-orb {
-      width: 80px; height: 80px;
-      margin: 0 auto 24px;
-      border-radius: 50%;
-      position: relative;
-      background: radial-gradient(circle at 38% 38%, rgba(240, 220, 164, 0.25) 0%, rgba(201, 168, 76, 0.08) 45%, transparent 70%);
-      box-shadow:
-        0 0 50px rgba(201, 168, 76, 0.15),
-        0 0 100px rgba(201, 168, 76, 0.05);
-      animation: orbFloat 6s ease-in-out infinite;
+    .hero-badge .pulse {
+      width:6px; height:6px; border-radius:50%;
+      background:var(--green);
+      animation:pulse 2s infinite;
     }
-
-    .hero-orb::before {
-      content: '';
-      position: absolute;
-      top: 50%; left: 50%;
-      transform: translate(-50%, -50%);
-      width: 24px; height: 24px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(240, 220, 164, 0.6) 0%, rgba(201, 168, 76, 0.2) 60%, transparent 100%);
-      box-shadow: 0 0 20px rgba(240, 220, 164, 0.3);
-    }
-
-    .hero-orb::after {
-      content: '';
-      position: absolute;
-      top: -10%; left: -10%; right: -10%; bottom: -10%;
-      border-radius: 50%;
-      border: 1px solid rgba(201, 168, 76, 0.08);
-      animation: orbRing 10s linear infinite;
-    }
-
-    @keyframes orbFloat {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-8px); }
-    }
-
-    @keyframes orbRing {
-      0% { transform: rotate(0deg); opacity: 0.3; }
-      50% { opacity: 0.8; }
-      100% { transform: rotate(360deg); opacity: 0.3; }
-    }
+    @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.3;} }
 
     .hero h1 {
-      font-family: var(--serif);
-      font-size: clamp(2.1rem, 7.5vw, 3.4rem);
-      font-weight: 700;
-      line-height: 1.08;
-      margin-bottom: 28px;
-      position: relative;
-    }
-
-    .hero h1 em {
-      font-style: italic;
-      color: var(--gold-light);
-      text-shadow: 0 0 40px rgba(201, 168, 76, 0.15);
-    }
-
-    .hero-sub {
-      font-family: var(--serif);
-      font-size: 1rem;
-      line-height: 1.65;
-      color: var(--text-secondary);
-      font-style: italic;
-      max-width: 420px;
-      margin: 0 auto 24px;
-    }
-
-    .hero-cta {
-      display: inline-block;
-      background: linear-gradient(135deg, var(--gold) 0%, #d4b65e 100%);
-      color: var(--bg-primary);
-      font-family: var(--sans);
-      font-size: 0.95rem;
-      font-weight: 600;
-      padding: 15px 36px;
-      border-radius: 60px;
-      text-decoration: none;
-      letter-spacing: 0.02em;
-      transition: all 0.4s ease;
-      box-shadow: 0 4px 24px rgba(201, 168, 76, 0.25), 0 0 60px rgba(201, 168, 76, 0.08);
-      position: relative;
-    }
-
-    .hero-cta:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 40px rgba(201, 168, 76, 0.35), 0 0 80px rgba(201, 168, 76, 0.12);
-    }
-
-    .hero-trust {
-      margin-top: 14px;
-      font-size: 0.76rem;
-      color: var(--text-muted);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-    }
-
-    .hero-trust .stars { color: var(--gold); letter-spacing: 2px; }
-
-    .hero-quote {
-      max-width: 400px;
-      margin: 20px auto 0;
-      padding: 14px 20px;
-      border-radius: 14px;
-      background: rgba(201, 168, 76, 0.04);
-      border: 1px solid rgba(201, 168, 76, 0.1);
-    }
-
-    .hero-quote p {
-      font-family: var(--serif);
-      font-size: 0.85rem;
-      font-style: italic;
-      color: var(--text-secondary);
-      line-height: 1.55;
-      margin-bottom: 6px;
-    }
-
-    .hero-quote .hq-author {
-      font-family: var(--sans);
-      font-size: 0.7rem;
-      color: var(--text-muted);
-    }
-
-    .scroll-cue {
-      margin-top: 24px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 6px;
-      animation: scrollBounce 2s ease-in-out infinite;
-    }
-
-    .scroll-cue span {
-      font-size: 0.68rem;
-      color: var(--text-muted);
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-    }
-
-    .scroll-cue svg {
-      width: 20px;
-      height: 20px;
-      stroke: var(--gold-dim);
-      stroke-width: 2;
-      fill: none;
-    }
-
-    @keyframes scrollBounce {
-      0%, 100% { transform: translateY(0); opacity: 0.6; }
-      50% { transform: translateY(6px); opacity: 1; }
-    }
-
-    /* ============================================
-       PAIN SECTION
-    ============================================ */
-    .pain-section {
-      background: var(--bg-secondary);
-      position: relative;
-    }
-
-    .pain-section::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 120px;
-      background: linear-gradient(180deg, var(--bg-primary) 0%, transparent 100%);
-      pointer-events: none;
-    }
-
-    .pain-card {
-      background: var(--bg-card);
-      border: 1px solid var(--bg-card-border);
-      border-radius: 16px;
-      padding: 22px 20px;
-      margin-bottom: 14px;
-      display: flex;
-      gap: 16px;
-      align-items: flex-start;
-      transition: all 0.3s ease;
-      backdrop-filter: blur(8px);
-    }
-
-    .pain-card:hover {
-      background: var(--bg-card-hover);
-      border-color: rgba(201, 168, 76, 0.2);
-      transform: translateX(4px);
-    }
-
-    .pain-icon {
-      flex-shrink: 0;
-      width: 28px; height: 28px;
-      border-radius: 50%;
-      background: rgba(192, 57, 43, 0.12);
-      border: 1px solid rgba(192, 57, 43, 0.25);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 2px;
-    }
-
-    .pain-icon svg {
-      width: 11px; height: 11px;
-      stroke: var(--accent-red);
-      stroke-width: 2.5;
-      fill: none;
-    }
-
-    .pain-card h3 {
-      font-family: var(--sans);
-      font-size: 0.93rem;
-      font-weight: 600;
-      color: var(--text-primary);
-      margin-bottom: 5px;
-    }
-
-    .pain-card p {
-      font-size: 0.87rem;
-      color: var(--text-secondary);
-      line-height: 1.55;
-    }
-
-    .pain-transition {
-      background: linear-gradient(135deg, rgba(201, 168, 76, 0.06) 0%, rgba(201, 168, 76, 0.02) 100%);
-      border: 1px solid rgba(201, 168, 76, 0.15);
-      border-radius: 18px;
-      padding: 36px 28px;
-      margin-top: 32px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .pain-transition::before {
-      content: '';
-      position: absolute;
-      top: -50%; left: -50%;
-      width: 200%; height: 200%;
-      background: radial-gradient(circle at 50% 50%, rgba(201, 168, 76, 0.05) 0%, transparent 50%);
-      animation: transitionGlow 6s ease-in-out infinite;
-    }
-
-    @keyframes transitionGlow {
-      0%, 100% { opacity: 0.5; }
-      50% { opacity: 1; }
-    }
-
-    .pain-transition p {
-      font-family: var(--serif);
-      font-size: 1.2rem;
-      font-style: italic;
-      line-height: 1.65;
-      position: relative;
-      z-index: 1;
-    }
-
-    .pain-transition strong { color: var(--gold-light); font-weight: 600; }
-
-    /* ============================================
-       STORY SECTION
-    ============================================ */
-    .story-section {
-      position: relative;
-    }
-
-    .story-section::after {
-      content: '';
-      position: absolute;
-      bottom: -40px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 300px;
-      height: 300px;
-      background: radial-gradient(circle, rgba(201, 168, 76, 0.04) 0%, transparent 60%);
-      pointer-events: none;
-    }
-
-    .story-text {
-      font-family: var(--serif);
-      font-size: 1.06rem;
-      line-height: 1.85;
-      color: var(--text-secondary);
-      text-align: center;
-      font-style: italic;
-    }
-
-    .story-text p { margin-bottom: 24px; }
-    .story-text strong { color: var(--text-primary); font-weight: 500; }
-
-    /* ============================================
-       STEPS
-    ============================================ */
-    .how-section {
-      background: var(--bg-secondary);
-    }
-
-    .steps-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 14px;
-      margin-top: 36px;
-    }
-
-    @media (min-width: 540px) {
-      .steps-grid { grid-template-columns: repeat(3, 1fr); }
-    }
-
-    .step-card {
-      background: var(--bg-card);
-      border: 1px solid var(--bg-card-border);
-      border-radius: 16px;
-      padding: 28px 18px;
-      text-align: center;
-      transition: all 0.3s ease;
-    }
-
-    .step-card:hover {
-      border-color: rgba(201, 168, 76, 0.25);
-      transform: translateY(-4px);
-      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
-    }
-
-    .step-number {
-      width: 46px; height: 46px;
-      border-radius: 50%;
-      border: 1px solid rgba(201, 168, 76, 0.2);
-      background: rgba(201, 168, 76, 0.06);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 16px;
-      font-family: var(--serif);
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--gold);
-      box-shadow: 0 0 20px rgba(201, 168, 76, 0.08);
-    }
-
-    .step-card h3 {
-      font-family: var(--sans);
-      font-size: 0.93rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-
-    .step-card p {
-      font-size: 0.84rem;
-      color: var(--text-secondary);
-      line-height: 1.55;
-    }
-
-    /* ============================================
-       TRANSFORMATION
-    ============================================ */
-    .transformation {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 18px;
-      max-width: 500px;
-      margin: 0 auto;
-    }
-
-    .t-box {
-      border: 1px solid var(--bg-card-border);
-      border-radius: 16px;
-      padding: 28px 24px;
-      text-align: left;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .t-box::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 2px;
-    }
-
-    .t-box.before {
-      background: rgba(192, 57, 43, 0.04);
-      border-color: rgba(192, 57, 43, 0.12);
-    }
-
-    .t-box.before::before {
-      background: linear-gradient(90deg, transparent, rgba(192, 57, 43, 0.3), transparent);
-    }
-
-    .t-box.after {
-      background: rgba(109, 155, 109, 0.04);
-      border-color: rgba(109, 155, 109, 0.12);
-    }
-
-    .t-box.after::before {
-      background: linear-gradient(90deg, transparent, rgba(109, 155, 109, 0.3), transparent);
-    }
-
-    .t-label {
-      font-family: var(--sans);
-      font-size: 0.68rem;
-      font-weight: 600;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 16px;
-    }
-
-    .t-box.before .t-label { color: var(--accent-red); }
-    .t-box.after .t-label { color: var(--accent-green); }
-
-    .t-box ul { list-style: none; }
-
-    .t-box li {
-      padding: 5px 0;
-      font-size: 0.9rem;
-      color: var(--text-secondary);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .t-dot {
-      width: 6px; height: 6px;
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-
-    .t-box.before .t-dot { background: var(--accent-red); }
-    .t-box.after .t-dot { background: var(--accent-green); }
-
-    /* ============================================
-       TESTIMONIALS
-    ============================================ */
-    .testimonial-card {
-      background: var(--bg-card);
-      border: 1px solid var(--bg-card-border);
-      border-radius: 16px;
-      padding: 28px 24px;
-      margin-bottom: 14px;
-      text-align: left;
-      transition: all 0.3s ease;
-    }
-
-    .testimonial-card:hover {
-      border-color: rgba(201, 168, 76, 0.2);
-    }
-
-    .t-quote {
-      font-family: var(--serif);
-      font-size: 2rem;
-      color: rgba(201, 168, 76, 0.2);
-      line-height: 1;
-      margin-bottom: 6px;
-    }
-
-    .t-text {
-      font-family: var(--serif);
-      font-size: 0.96rem;
-      font-style: italic;
-      line-height: 1.7;
-      color: var(--text-secondary);
-      margin-bottom: 20px;
-    }
-
-    .t-author {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .t-avatar {
-      width: 46px; height: 46px;
-      border-radius: 50%;
-      border: 2px solid rgba(201, 168, 76, 0.2);
-      object-fit: cover;
-      box-shadow: 0 0 12px rgba(201, 168, 76, 0.1);
-    }
-
-    .t-name {
-      font-family: var(--sans);
-      font-size: 0.85rem;
-      font-weight: 600;
-    }
-
-    .t-meta {
-      font-size: 0.73rem;
-      color: var(--text-muted);
-    }
-
-    .t-meta .verified { color: var(--accent-green); }
-    .t-meta .stars { color: var(--gold); letter-spacing: 1px; }
-
-    /* ============================================
-       OFFER + PRICING
-    ============================================ */
-    .offer-section {
-      background: var(--bg-secondary);
-      position: relative;
-    }
-
-    .offer-section::before {
-      content: '';
-      position: absolute;
-      top: 50%; left: 50%;
-      transform: translate(-50%, -50%);
-      width: 500px; height: 500px;
-      background: radial-gradient(circle, rgba(201, 168, 76, 0.05) 0%, transparent 60%);
-      pointer-events: none;
-    }
-
-    .offer-item {
-      background: var(--bg-card);
-      border: 1px solid var(--bg-card-border);
-      border-radius: 14px;
-      padding: 20px;
-      margin-bottom: 10px;
-      display: flex;
-      gap: 16px;
-      align-items: flex-start;
-      transition: all 0.3s ease;
-    }
-
-    .offer-item:hover {
-      border-color: rgba(201, 168, 76, 0.2);
-      transform: translateX(4px);
-    }
-
-    .offer-icon {
-      font-size: 1.4rem;
-      flex-shrink: 0;
-      width: 44px; height: 44px;
-      border-radius: 12px;
-      background: rgba(201, 168, 76, 0.06);
-      border: 1px solid rgba(201, 168, 76, 0.1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .offer-item h3 {
-      font-family: var(--sans);
-      font-size: 0.9rem;
-      font-weight: 600;
-      margin-bottom: 4px;
-    }
-
-    .offer-item p {
-      font-size: 0.82rem;
-      color: var(--text-secondary);
-      line-height: 1.5;
-    }
-
-    /* Pricing Box */
-    .pricing-box {
-      max-width: 460px;
-      margin: 40px auto 0;
-      background: linear-gradient(135deg, rgba(201, 168, 76, 0.06) 0%, rgba(201, 168, 76, 0.02) 100%);
-      border: 1px solid rgba(201, 168, 76, 0.18);
-      border-radius: 22px;
-      padding: 40px 28px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .pricing-box::before {
-      content: '';
-      position: absolute;
-      top: -1px; left: 20%; right: 20%;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
-    }
-
-    .pricing-box::after {
-      content: '';
-      position: absolute;
-      top: -100px; left: 50%;
-      transform: translateX(-50%);
-      width: 300px; height: 300px;
-      background: radial-gradient(circle, rgba(201, 168, 76, 0.06) 0%, transparent 60%);
-      pointer-events: none;
-    }
-
-    .pricing-label {
-      font-family: var(--sans);
-      font-size: 0.68rem;
-      font-weight: 600;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      margin-bottom: 14px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .pricing-amount {
-      font-family: var(--serif);
-      font-size: 4rem;
-      font-weight: 700;
-      line-height: 1;
-      margin-bottom: 4px;
-      position: relative;
-      z-index: 1;
-      text-shadow: 0 0 40px rgba(201, 168, 76, 0.1);
-    }
-
-    .pricing-amount .curr {
-      font-size: 1.6rem;
-      vertical-align: super;
-      color: var(--gold);
-    }
-
-    .pricing-note {
-      font-size: 0.83rem;
-      color: var(--text-secondary);
-      margin-bottom: 28px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .pricing-features {
-      text-align: left;
-      margin-bottom: 28px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .p-feature {
-      padding: 7px 0;
-      font-size: 0.86rem;
-      color: var(--text-secondary);
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .p-check {
-      width: 20px; height: 20px;
-      border-radius: 50%;
-      background: rgba(109, 155, 109, 0.1);
-      border: 1px solid rgba(109, 155, 109, 0.2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-
-    .p-check svg {
-      width: 10px; height: 10px;
-      stroke: var(--accent-green);
-      stroke-width: 3;
-      fill: none;
-    }
-
-    .cta-main {
-      display: block;
-      width: 100%;
-      background: linear-gradient(135deg, var(--gold) 0%, #d4b65e 100%);
-      color: var(--bg-primary);
-      font-family: var(--sans);
-      font-size: 1.05rem;
-      font-weight: 600;
-      padding: 18px 32px;
-      border-radius: 60px;
-      text-decoration: none;
-      text-align: center;
-      transition: all 0.4s ease;
-      box-shadow: 0 4px 24px rgba(201, 168, 76, 0.25), 0 0 60px rgba(201, 168, 76, 0.06);
-      position: relative;
-      z-index: 1;
-    }
-
-    .cta-main:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 40px rgba(201, 168, 76, 0.35), 0 0 80px rgba(201, 168, 76, 0.1);
-    }
-
-    .pricing-safe {
-      margin-top: 16px;
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .pricing-safe svg {
-      width: 13px; height: 13px;
-      stroke: var(--text-muted);
-      stroke-width: 2;
-      fill: none;
-    }
-
-    /* ============================================
-       GUARANTEE
-    ============================================ */
-    .guarantee-box {
-      max-width: 460px;
-      margin: 0 auto;
-      padding: 36px 24px;
-      border: 1px solid var(--bg-card-border);
-      border-radius: 18px;
-      background: var(--bg-card);
-      text-align: center;
-    }
-
-    .guarantee-box .g-icon { font-size: 2.4rem; margin-bottom: 14px; }
-
-    .guarantee-box h3 {
-      font-family: var(--serif);
-      font-size: 1.35rem;
-      font-weight: 600;
-      margin-bottom: 12px;
-    }
-
-    .guarantee-box p {
-      font-size: 0.88rem;
-      color: var(--text-secondary);
-      line-height: 1.65;
-    }
-
-    /* ============================================
-       FAQ
-    ============================================ */
-    .faq-list {
-      max-width: 500px;
-      margin: 36px auto 0;
-      text-align: left;
-    }
-
+      font-family:var(--serif);
+      font-size:clamp(1.75rem,6.5vw,2.6rem);
+      font-weight:600; line-height:1.12;
+      margin-bottom:14px;
+      position:relative;
+    }
+    .hero h1 em { font-style:italic; color:var(--gold-l); }
+
+    .hero-p {
+      font-size:0.92rem; line-height:1.6;
+      color:var(--text2);
+      margin-bottom:24px;
+      max-width:360px; margin-left:auto; margin-right:auto;
+    }
+
+    /* ── PHONE MOCKUP ── */
+    .phone-wrap {
+      width:200px; margin:0 auto 28px;
+      position:relative;
+    }
+    .phone {
+      width:200px; height:400px;
+      border-radius:28px;
+      border:2px solid rgba(255,255,255,0.1);
+      background:linear-gradient(180deg, #0e1025 0%, #0a0c1a 100%);
+      overflow:hidden;
+      box-shadow:
+        0 20px 60px rgba(0,0,0,0.5),
+        0 0 40px var(--gold-glow),
+        inset 0 1px 0 rgba(255,255,255,0.05);
+      position:relative;
+    }
+    .phone-notch {
+      width:80px; height:22px;
+      background:var(--bg);
+      border-radius:0 0 14px 14px;
+      margin:0 auto;
+      position:relative; z-index:2;
+    }
+    .phone-screen {
+      padding:12px 16px;
+      height:calc(100% - 22px);
+      display:flex; flex-direction:column;
+    }
+    .ph-greeting {
+      font-size:0.6rem;
+      color:var(--text3);
+      margin-bottom:4px;
+    }
+    .ph-title {
+      font-family:var(--serif);
+      font-size:0.85rem;
+      font-weight:500;
+      margin-bottom:12px;
+      color:var(--text);
+    }
+    .ph-title em { color:var(--gold-l); font-style:italic; }
+    .ph-mood {
+      font-size:0.55rem; color:var(--text3);
+      margin-bottom:8px;
+      text-transform:uppercase;
+      letter-spacing:0.1em;
+    }
+    .ph-moods {
+      display:flex; gap:6px;
+      margin-bottom:16px;
+    }
+    .ph-mood-btn {
+      flex:1;
+      padding:8px 4px;
+      border-radius:10px;
+      border:1px solid var(--border);
+      background:var(--surface);
+      text-align:center;
+      font-size:0.55rem;
+      color:var(--text2);
+      transition:all 0.3s;
+    }
+    .ph-mood-btn.active {
+      border-color:var(--gold);
+      background:var(--gold-d);
+      color:var(--gold-l);
+    }
+    .ph-mood-btn .emoji { font-size:1rem; display:block; margin-bottom:2px; }
+    .ph-card {
+      flex:1;
+      background:linear-gradient(135deg, rgba(196,164,78,0.08) 0%, rgba(196,164,78,0.02) 100%);
+      border:1px solid rgba(196,164,78,0.12);
+      border-radius:14px;
+      padding:14px;
+      display:flex; flex-direction:column;
+    }
+    .ph-card-label {
+      font-size:0.5rem;
+      color:var(--gold);
+      text-transform:uppercase;
+      letter-spacing:0.12em;
+      margin-bottom:6px;
+    }
+    .ph-card-title {
+      font-family:var(--serif);
+      font-size:0.72rem;
+      font-weight:500;
+      margin-bottom:4px;
+    }
+    .ph-card-desc {
+      font-size:0.5rem;
+      color:var(--text3);
+      flex:1;
+    }
+    .ph-card-play {
+      margin-top:10px;
+      width:100%; padding:8px;
+      border-radius:8px;
+      background:var(--gold);
+      color:var(--bg);
+      font-size:0.55rem;
+      font-weight:600;
+      border:none;
+      text-align:center;
+      letter-spacing:0.05em;
+    }
+    .phone-glow {
+      position:absolute;
+      top:50%; left:50%; transform:translate(-50%,-50%);
+      width:300px; height:300px;
+      background:radial-gradient(circle, rgba(196,164,78,0.1) 0%, transparent 60%);
+      pointer-events:none;
+      z-index:-1;
+    }
+
+    /* ── CTA BUTTONS ── */
+    .cta-group {
+      display:flex; flex-direction:column;
+      gap:10px; max-width:340px;
+      margin:0 auto 16px;
+    }
+    .cta-primary {
+      display:block; width:100%;
+      padding:15px 24px;
+      background:var(--gold);
+      color:var(--bg);
+      font-family:var(--sans);
+      font-size:0.92rem; font-weight:600;
+      border-radius:50px;
+      text-decoration:none; text-align:center;
+      box-shadow:0 4px 20px rgba(196,164,78,0.3);
+      transition:all 0.3s;
+    }
+    .cta-primary:hover {
+      transform:translateY(-2px);
+      box-shadow:0 8px 30px rgba(196,164,78,0.4);
+    }
+    .cta-secondary {
+      display:block; width:100%;
+      padding:14px 24px;
+      background:transparent;
+      border:1px solid var(--border);
+      color:var(--text);
+      font-family:var(--sans);
+      font-size:0.85rem; font-weight:400;
+      border-radius:50px;
+      text-decoration:none; text-align:center;
+      transition:all 0.3s;
+    }
+    .cta-secondary:hover {
+      border-color:rgba(255,255,255,0.15);
+      background:var(--surface);
+    }
+    .cta-note {
+      font-size:0.68rem; color:var(--text3);
+      text-align:center;
+    }
+
+    /* ── SOCIAL PROOF BAR ── */
+    .proof-bar {
+      display:flex; justify-content:center;
+      gap:24px; padding:20px;
+      border-top:1px solid var(--border);
+      border-bottom:1px solid var(--border);
+      max-width:440px; margin:0 auto;
+    }
+    .proof-item { text-align:center; }
+    .proof-num {
+      font-family:var(--serif);
+      font-size:1.4rem; font-weight:600;
+      color:var(--gold-l);
+    }
+    .proof-label {
+      font-size:0.6rem;
+      color:var(--text3);
+      text-transform:uppercase;
+      letter-spacing:0.08em;
+    }
+
+    /* ── SECTION STYLES ── */
+    .sec {
+      padding:56px 20px;
+      max-width:440px;
+      margin:0 auto;
+    }
+    .sec-label {
+      font-size:0.62rem; font-weight:600;
+      letter-spacing:0.2em;
+      text-transform:uppercase;
+      color:var(--gold);
+      text-align:center;
+      margin-bottom:10px;
+    }
+    .sec-title {
+      font-family:var(--serif);
+      font-size:clamp(1.4rem,4.5vw,1.9rem);
+      font-weight:600; line-height:1.2;
+      text-align:center;
+      margin-bottom:24px;
+    }
+    .sec-title em { font-style:italic; color:var(--gold-l); }
+
+    .divider {
+      height:1px; max-width:440px; margin:0 auto;
+      background:linear-gradient(90deg, transparent, var(--border), transparent);
+    }
+
+    /* ── PAIN SECTION ── */
+    .pain-grid {
+      display:grid; gap:10px;
+    }
+    .pain-item {
+      display:flex; gap:12px; align-items:flex-start;
+      padding:16px;
+      border-radius:14px;
+      background:var(--surface);
+      border:1px solid var(--border);
+    }
+    .pain-x {
+      width:22px; height:22px; border-radius:50%;
+      background:rgba(196,78,78,0.1);
+      border:1px solid rgba(196,78,78,0.2);
+      display:flex; align-items:center; justify-content:center;
+      flex-shrink:0; margin-top:1px;
+      font-size:0.55rem; color:var(--red);
+    }
+    .pain-item p {
+      font-size:0.85rem; color:var(--text2);
+      line-height:1.5;
+    }
+    .pain-item strong { color:var(--text); font-weight:500; }
+    .pain-bridge {
+      margin-top:24px; padding:24px;
+      text-align:center;
+      border-radius:16px;
+      background:linear-gradient(135deg, var(--gold-d) 0%, transparent 100%);
+      border:1px solid rgba(196,164,78,0.12);
+    }
+    .pain-bridge p {
+      font-family:var(--serif);
+      font-size:1.05rem;
+      font-style:italic;
+      line-height:1.6;
+    }
+    .pain-bridge strong { color:var(--gold-l); }
+
+    /* ── HOW IT WORKS ── */
+    .steps { display:grid; gap:10px; }
+    .step {
+      display:flex; gap:14px; align-items:flex-start;
+      padding:18px;
+      border-radius:14px;
+      background:var(--surface);
+      border:1px solid var(--border);
+    }
+    .step-n {
+      width:32px; height:32px; border-radius:50%;
+      background:var(--gold-d);
+      border:1px solid rgba(196,164,78,0.2);
+      display:flex; align-items:center; justify-content:center;
+      flex-shrink:0;
+      font-family:var(--serif);
+      font-size:0.85rem; font-weight:600;
+      color:var(--gold);
+    }
+    .step h3 {
+      font-size:0.88rem; font-weight:500;
+      margin-bottom:3px;
+    }
+    .step p {
+      font-size:0.78rem; color:var(--text2);
+      line-height:1.5;
+    }
+
+    /* ── TRANSFORMATION ── */
+    .transform-grid {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
+    }
+    .t-col { border-radius:14px; padding:20px 16px; }
+    .t-col.before {
+      background:rgba(196,78,78,0.04);
+      border:1px solid rgba(196,78,78,0.1);
+    }
+    .t-col.after {
+      background:rgba(95,168,95,0.04);
+      border:1px solid rgba(95,168,95,0.1);
+    }
+    .t-col-label {
+      font-size:0.58rem; font-weight:600;
+      letter-spacing:0.15em;
+      text-transform:uppercase;
+      margin-bottom:12px;
+    }
+    .t-col.before .t-col-label { color:var(--red); }
+    .t-col.after .t-col-label { color:var(--green); }
+    .t-col li {
+      list-style:none;
+      font-size:0.78rem;
+      color:var(--text2);
+      padding:3px 0;
+      display:flex; align-items:center; gap:6px;
+    }
+    .t-col li .dot {
+      width:4px; height:4px; border-radius:50%;
+      flex-shrink:0;
+    }
+    .t-col.before .dot { background:var(--red); }
+    .t-col.after .dot { background:var(--green); }
+
+    /* ── TESTIMONIALS ── */
+    .reviews { display:grid; gap:12px; }
+    .review {
+      padding:20px;
+      border-radius:14px;
+      background:var(--surface);
+      border:1px solid var(--border);
+    }
+    .review-text {
+      font-family:var(--serif);
+      font-size:0.88rem;
+      font-style:italic;
+      line-height:1.65;
+      color:var(--text2);
+      margin-bottom:14px;
+    }
+    .review-author {
+      display:flex; align-items:center; gap:10px;
+    }
+    .review-avatar {
+      width:36px; height:36px; border-radius:50%;
+      object-fit:cover;
+      border:1px solid rgba(196,164,78,0.15);
+    }
+    .review-name {
+      font-size:0.78rem; font-weight:500;
+    }
+    .review-meta {
+      font-size:0.62rem; color:var(--text3);
+    }
+    .review-meta .stars { color:var(--gold); }
+
+    /* ── PRICING ── */
+    .pricing-sec {
+      background:var(--bg2);
+      border-top:1px solid var(--border);
+      border-bottom:1px solid var(--border);
+    }
+    .pricing-cards {
+      display:grid; gap:14px;
+    }
+    .p-card {
+      border-radius:18px;
+      padding:28px 22px;
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+    }
+    .p-card.free {
+      background:var(--surface);
+      border:1px solid var(--border);
+    }
+    .p-card.full {
+      background:linear-gradient(135deg, rgba(196,164,78,0.08) 0%, rgba(196,164,78,0.02) 100%);
+      border:1px solid rgba(196,164,78,0.18);
+    }
+    .p-card.full::before {
+      content:'';
+      position:absolute; top:-1px; left:20%; right:20%;
+      height:2px;
+      background:linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+    .p-tag {
+      display:inline-block;
+      padding:4px 12px;
+      border-radius:50px;
+      font-size:0.58rem; font-weight:600;
+      letter-spacing:0.1em;
+      text-transform:uppercase;
+      margin-bottom:12px;
+    }
+    .p-card.free .p-tag {
+      background:rgba(95,168,95,0.1);
+      color:var(--green);
+      border:1px solid rgba(95,168,95,0.2);
+    }
+    .p-card.full .p-tag {
+      background:var(--gold-d);
+      color:var(--gold-l);
+      border:1px solid rgba(196,164,78,0.2);
+    }
+    .p-price {
+      font-family:var(--serif);
+      font-size:2.2rem; font-weight:700;
+      line-height:1; margin-bottom:4px;
+    }
+    .p-price .small {
+      font-size:0.9rem;
+      vertical-align:super;
+      color:var(--gold);
+    }
+    .p-desc {
+      font-size:0.78rem;
+      color:var(--text3);
+      margin-bottom:18px;
+    }
+    .p-features {
+      text-align:left; margin-bottom:20px;
+    }
+    .p-feat {
+      display:flex; align-items:center; gap:8px;
+      padding:5px 0;
+      font-size:0.78rem; color:var(--text2);
+    }
+    .p-feat .ck {
+      width:16px; height:16px; border-radius:50%;
+      display:flex; align-items:center; justify-content:center;
+      flex-shrink:0;
+    }
+    .p-card.free .ck {
+      background:rgba(95,168,95,0.1);
+      border:1px solid rgba(95,168,95,0.15);
+    }
+    .p-card.full .ck {
+      background:var(--gold-d);
+      border:1px solid rgba(196,164,78,0.15);
+    }
+    .p-feat .ck svg {
+      width:8px; height:8px;
+      stroke-width:3; fill:none;
+    }
+    .p-card.free .ck svg { stroke:var(--green); }
+    .p-card.full .ck svg { stroke:var(--gold); }
+    .p-btn {
+      display:block; width:100%;
+      padding:14px;
+      border-radius:50px;
+      font-family:var(--sans);
+      font-size:0.88rem; font-weight:600;
+      text-decoration:none; text-align:center;
+      transition:all 0.3s;
+    }
+    .p-card.free .p-btn {
+      background:var(--green);
+      color:white;
+    }
+    .p-card.full .p-btn {
+      background:var(--gold);
+      color:var(--bg);
+      box-shadow:0 4px 20px rgba(196,164,78,0.25);
+    }
+
+    /* ── GUARANTEE ── */
+    .guarantee {
+      max-width:400px; margin:0 auto;
+      padding:28px 22px;
+      border-radius:16px;
+      background:var(--surface);
+      border:1px solid var(--border);
+      text-align:center;
+    }
+    .guarantee h3 {
+      font-family:var(--serif);
+      font-size:1.15rem; font-weight:600;
+      margin:10px 0;
+    }
+    .guarantee p {
+      font-size:0.82rem; color:var(--text2);
+      line-height:1.6;
+    }
+
+    /* ── FAQ ── */
+    .faq-list { display:grid; gap:8px; }
     .faq-item {
-      border: 1px solid var(--bg-card-border);
-      border-radius: 12px;
-      margin-bottom: 10px;
-      background: var(--bg-card);
-      cursor: pointer;
-      transition: all 0.25s ease;
-      overflow: hidden;
+      border:1px solid var(--border);
+      border-radius:12px;
+      background:var(--surface);
+      overflow:hidden; cursor:pointer;
     }
-
-    .faq-item:hover { border-color: rgba(201, 168, 76, 0.2); }
-
     .faq-q {
-      padding: 17px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 0.88rem;
-      font-weight: 500;
+      padding:15px 18px;
+      display:flex; justify-content:space-between;
+      align-items:center;
+      font-size:0.82rem; font-weight:400;
     }
-
     .faq-q .tog {
-      font-size: 1.15rem;
-      color: var(--text-muted);
-      transition: transform 0.3s ease;
-      flex-shrink: 0;
-      margin-left: 12px;
+      font-size:1rem; color:var(--text3);
+      transition:transform 0.3s; flex-shrink:0; margin-left:10px;
     }
-
     .faq-a {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.35s ease;
+      max-height:0; overflow:hidden;
+      transition:max-height 0.35s;
     }
-
     .faq-a-inner {
-      padding: 0 20px 17px;
-      font-size: 0.84rem;
-      color: var(--text-secondary);
-      line-height: 1.65;
+      padding:0 18px 15px;
+      font-size:0.78rem; color:var(--text2);
+      line-height:1.6;
     }
+    .faq-item.open .faq-a { max-height:250px; }
+    .faq-item.open .tog { transform:rotate(45deg); }
 
-    .faq-item.open .faq-a { max-height: 300px; }
-    .faq-item.open .tog { transform: rotate(45deg); }
-
-    /* ============================================
-       FINAL CTA
-    ============================================ */
+    /* ── FINAL CTA ── */
     .final-cta {
-      text-align: center;
-      position: relative;
+      text-align:center;
+      padding:56px 20px 40px;
+      max-width:440px; margin:0 auto;
+      position:relative;
     }
-
     .final-cta::before {
-      content: '';
-      position: absolute;
-      top: 50%; left: 50%;
-      transform: translate(-50%, -50%);
-      width: 400px; height: 400px;
-      background: radial-gradient(circle, rgba(201, 168, 76, 0.06) 0%, transparent 60%);
-      pointer-events: none;
+      content:'';
+      position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+      width:400px; height:400px;
+      background:radial-gradient(circle, var(--gold-glow) 0%, transparent 60%);
+      pointer-events:none;
     }
 
-    .final-cta-btn {
-      display: inline-block;
-      background: linear-gradient(135deg, var(--gold) 0%, #d4b65e 100%);
-      color: var(--bg-primary);
-      font-family: var(--sans);
-      font-size: 1.08rem;
-      font-weight: 600;
-      padding: 18px 48px;
-      border-radius: 60px;
-      text-decoration: none;
-      transition: all 0.4s ease;
-      box-shadow: 0 4px 24px rgba(201, 168, 76, 0.25), 0 0 60px rgba(201, 168, 76, 0.08);
-      position: relative;
-      z-index: 1;
-    }
-
-    .final-cta-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 40px rgba(201, 168, 76, 0.35), 0 0 80px rgba(201, 168, 76, 0.12);
-    }
-
-    .final-details {
-      margin-top: 16px;
-      font-size: 0.76rem;
-      color: var(--text-muted);
-    }
-
-    /* ============================================
-       FOOTER
-    ============================================ */
+    /* ── FOOTER ── */
     footer {
-      padding: 40px 24px;
-      text-align: center;
-      border-top: 1px solid rgba(255,255,255,0.04);
-      max-width: 680px;
-      margin: 0 auto;
+      padding:30px 20px;
+      text-align:center;
+      border-top:1px solid var(--border);
+      max-width:440px; margin:0 auto;
+    }
+    footer p { font-size:0.65rem; color:var(--text3); }
+    footer a { color:var(--text3); text-decoration:none; }
+
+    /* ── STICKY BOTTOM ── */
+    .sticky-b {
+      position:fixed; bottom:0; left:0; right:0; z-index:99;
+      background:rgba(6,6,10,0.92);
+      backdrop-filter:blur(20px);
+      -webkit-backdrop-filter:blur(20px);
+      border-top:1px solid var(--border);
+      padding:10px 16px;
+      display:flex; align-items:center;
+      justify-content:space-between; gap:10px;
+      transform:translateY(100%);
+      transition:transform 0.4s;
+    }
+    .sticky-b.show { transform:translateY(0); }
+    .sb-text { flex:1; }
+    .sb-title { font-size:0.78rem; font-weight:500; }
+    .sb-sub { font-size:0.62rem; color:var(--text3); }
+    .sb-btn {
+      padding:9px 18px; border-radius:50px;
+      background:var(--gold); color:var(--bg);
+      font-size:0.78rem; font-weight:600;
+      text-decoration:none; white-space:nowrap;
     }
 
-    .f-logo {
-      font-family: var(--serif);
-      font-size: 1.05rem;
-      font-weight: 500;
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
+    /* ── ANIMATIONS ── */
+    .fade { opacity:0; transform:translateY(16px); transition:opacity 0.6s, transform 0.6s; }
+    .fade.vis { opacity:1; transform:translateY(0); }
+
+    /* ── PHONE ANIMATION ── */
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+    .phone-wrap { animation:float 5s ease-in-out infinite; }
+
+    /* mood cycling */
+    @keyframes moodCycle {
+      0%,25% { opacity:1; }
+      30%,95% { opacity:1; }
+      100% { opacity:1; }
     }
 
-    .f-desc {
-      font-size: 0.76rem;
-      color: var(--text-muted);
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
+    body { padding-bottom:60px; }
 
-    .f-links {
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      margin-bottom: 20px;
-    }
-
-    .f-links a {
-      font-size: 0.76rem;
-      color: var(--text-muted);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .f-links a:hover { color: var(--text-secondary); }
-
-    .f-copy { font-size: 0.68rem; color: var(--text-muted); opacity: 0.5; }
-
-    /* ============================================
-       STICKY BOTTOM
-    ============================================ */
-    .sticky-bottom {
-      position: fixed;
-      bottom: 0; left: 0; right: 0;
-      z-index: 99;
-      background: rgba(8, 8, 6, 0.94);
-      backdrop-filter: blur(24px);
-      -webkit-backdrop-filter: blur(24px);
-      border-top: 1px solid rgba(201, 168, 76, 0.1);
-      padding: 10px 16px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      transform: translateY(100%);
-      transition: transform 0.4s ease;
-    }
-
-    .sticky-bottom.visible { transform: translateY(0); }
-
-    .sb-info { flex: 1; min-width: 0; }
-
-    .sb-name {
-      font-family: var(--sans);
-      font-size: 0.8rem;
-      font-weight: 600;
-    }
-
-    .sb-price {
-      font-size: 0.68rem;
-      color: var(--text-muted);
-    }
-
-    .sb-cta {
-      background: linear-gradient(135deg, var(--gold), #d4b65e);
-      color: var(--bg-primary);
-      font-family: var(--sans);
-      font-size: 0.82rem;
-      font-weight: 600;
-      padding: 10px 20px;
-      border-radius: 50px;
-      text-decoration: none;
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-
-    /* ============================================
-       FADE ANIMATIONS
-    ============================================ */
-    .fade-in {
-      opacity: 0;
-      transform: translateY(18px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
-    }
-
-    .fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    @media (max-width: 480px) {
-      section { padding: 60px 18px; }
-      .hero { padding-top: 70px; }
-      .hero h1 { font-size: 1.85rem; }
-      .hero-orb { width: 60px; height: 60px; margin-bottom: 18px; }
+    @media(max-width:380px) {
+      .hero h1 { font-size:1.6rem; }
+      .phone { width:180px; height:360px; }
+      .phone-wrap { width:180px; }
+      .transform-grid { grid-template-columns:1fr; }
     }
   </style>
 </head>
 <body>
 
-  <!-- STARS BACKGROUND -->
-  <div class="stars-bg" id="starsBg"></div>
+  <nav>
+    <div class="nav-brand"><span class="nav-dot"></span> Risveglio Sereno</div>
+    <a href="https://app.risvegliosereno.com" class="nav-cta" onclick="fbq('track','Lead')">Prova gratis</a>
+  </nav>
 
-  <!-- STICKY HEADER -->
-  <header class="sticky-header">
-    <div class="logo">
-      <span class="logo-dot"></span>
-      Risveglio Sereno
+  <!-- ═══ HERO ═══ -->
+  <section class="hero">
+    <div class="hero-badge"><span class="pulse"></span> Prova gratuita disponibile</div>
+    <h1>La tua mente merita <em>pace.</em></h1>
+    <p class="hero-p">
+      Il percorso di 90 giorni che trasforma l'ansia in calma,
+      personalizzato per te. 5 minuti al giorno bastano.
+    </p>
+
+    <!-- PHONE MOCKUP -->
+    <div class="phone-wrap">
+      <div class="phone-glow"></div>
+      <div class="phone">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="ph-greeting">Buongiorno ✨</div>
+          <div class="ph-title">Come ti senti <em>oggi?</em></div>
+          <div class="ph-mood">scegli il tuo stato</div>
+          <div class="ph-moods" id="moods">
+            <div class="ph-mood-btn active"><span class="emoji">😰</span>Ansiosa</div>
+            <div class="ph-mood-btn"><span class="emoji">😴</span>Stanca</div>
+            <div class="ph-mood-btn"><span class="emoji">😤</span>Agitata</div>
+          </div>
+          <div class="ph-card">
+            <div class="ph-card-label">La tua meditazione</div>
+            <div class="ph-card-title" id="medTitle">Respiro della Calma</div>
+            <div class="ph-card-desc" id="medDesc">7 min · Creata per il tuo stato emotivo di oggi</div>
+            <div class="ph-card-play">▶ Inizia ora</div>
+          </div>
+        </div>
+      </div>
     </div>
-    <a href="#offerta" class="header-cta">Scopri il percorso</a>
-  </header>
 
-  <div class="content-wrap">
-
-    <!-- ========== HERO ========== -->
-    <section class="hero">
-      <div class="hero-glow"></div>
-      <div class="hero-orb"></div>
-      <h1>Smetti di sopravvivere<br>al <em>rumore mentale.</em></h1>
-      <p class="hero-sub">
-        Il percorso di 90 giorni che trasforma l'ansia in calma,
-        il sonno frammentato in riposo profondo.
-        Personalizzato per te. Solo €49.
-      </p>
-      <a href="https://pay.hotmart.com/H105239735W?off=8skatnnb&bid=1776294335191" class="hero-cta" onclick="fbq('track','InitiateCheckout')">Inizia il tuo percorso →</a>
-      <div class="hero-trust">
-        <span class="stars">★★★★★</span>
-        <span>Garanzia 30 giorni · Pagamento unico · Accesso immediato</span>
-      </div>
-      <div class="hero-quote">
-        <p>"Dopo 7 giorni dormivo meglio. Dopo 30, l'ansia mattutina era scomparsa."</p>
-        <div class="hq-author">— Giulia M., Milano ★★★★★</div>
-      </div>
-      <div class="scroll-cue">
-        <span>Scopri di più</span>
-        <svg viewBox="0 0 20 20"><polyline points="4,7 10,13 16,7"/></svg>
-      </div>
-    </section>
-
-    <div class="section-divider"></div>
-
-    <!-- ========== PAIN SECTION ========== -->
-    <section class="pain-section">
-      <p class="section-label">Questo ti riguarda?</p>
-      <h2 class="section-title">Ti riconosci<br>in <em>qualcuno di questi?</em></h2>
-      <p class="section-subtitle" style="margin-bottom:36px">
-        Non sono debolezze. Sono segnali che il tuo sistema nervoso è sovraccarico e chiede aiuto.
-      </p>
-
-      <div class="pain-card fade-in">
-        <div class="pain-icon"><svg viewBox="0 0 12 12"><line x1="2" y1="2" x2="10" y2="10"/><line x1="10" y1="2" x2="2" y2="10"/></svg></div>
-        <div><h3>Ti svegli già stanca/o</h3><p>La notte non basta mai, il cervello non si spegne davvero, e il giorno ricomincia prima ancora che tu sia pronta/o.</p></div>
-      </div>
-      <div class="pain-card fade-in">
-        <div class="pain-icon"><svg viewBox="0 0 12 12"><line x1="2" y1="2" x2="10" y2="10"/><line x1="10" y1="2" x2="2" y2="10"/></svg></div>
-        <div><h3>L'ansia ti anticipa tutto</h3><p>Preoccupazioni per cose che non sono ancora successe, e forse non succederanno mai. Il futuro pesa più del presente.</p></div>
-      </div>
-      <div class="pain-card fade-in">
-        <div class="pain-icon"><svg viewBox="0 0 12 12"><line x1="2" y1="2" x2="10" y2="10"/><line x1="10" y1="2" x2="2" y2="10"/></svg></div>
-        <div><h3>Reagisci quando non vorresti</h3><p>Poi ti penti. Le emozioni arrivano più veloci del pensiero e lasci le situazioni con un senso di sconfitta.</p></div>
-      </div>
-      <div class="pain-card fade-in">
-        <div class="pain-icon"><svg viewBox="0 0 12 12"><line x1="2" y1="2" x2="10" y2="10"/><line x1="10" y1="2" x2="2" y2="10"/></svg></div>
-        <div><h3>Hai già provato di tutto</h3><p>Meditazione, podcast, libri — ma niente dura più di qualche giorno. Poi torni al punto di partenza, esausta/o e delusa/o.</p></div>
-      </div>
-      <div class="pain-card fade-in">
-        <div class="pain-icon"><svg viewBox="0 0 12 12"><line x1="2" y1="2" x2="10" y2="10"/><line x1="10" y1="2" x2="2" y2="10"/></svg></div>
-        <div><h3>Senti che ti manca qualcosa</h3><p>Non sai definirlo con precisione, ma sai con certezza che questa non può essere tutta la vita.</p></div>
-      </div>
-
-      <div class="pain-transition fade-in">
-        <p>E se il problema non fossi tu,<br>ma il fatto che nessuno ti ha ancora dato<br><strong>lo strumento giusto?</strong></p>
-      </div>
-    </section>
-
-    <div class="section-divider"></div>
-
-    <!-- ========== STORY ========== -->
-    <section class="story-section">
-      <p class="section-label">Perché esiste Risveglio Sereno</p>
-      <div class="story-text fade-in">
-        <p>Risveglio Sereno è nato da un bisogno reale: <strong>trovare un modo per rendere la crescita interiore accessibile, quotidiana e sostenibile.</strong></p>
-        <p>Non l'ennesimo corso da guardare e dimenticare. Non un'app generica con meditazioni tutte uguali. Ma un sistema che si adatta a te — a come ti senti oggi, a cosa hai bisogno adesso — e ti accompagna giorno dopo giorno verso una trasformazione che puoi sentire davvero.</p>
-        <p><strong>Ogni meditazione, ogni riflessione, ogni percorso è creato su misura per te</strong> — grazie a un sistema intelligente che impara dai tuoi stati emotivi e ti guida con precisione verso la calma, la chiarezza e la forza interiore.</p>
-      </div>
-    </section>
-
-    <div class="section-divider"></div>
-
-    <!-- ========== HOW IT WORKS ========== -->
-    <section class="how-section">
-      <p class="section-label">Come funziona</p>
-      <h2 class="section-title">3 passi verso la <em>pace interiore.</em></h2>
-      <div class="steps-grid">
-        <div class="step-card fade-in">
-          <div class="step-number">1</div>
-          <h3>Ascolta te stessa/o</h3>
-          <p>Ogni giorno, il percorso ti chiede come stai. Bastano pochi secondi. Da lì nasce la tua pratica.</p>
-        </div>
-        <div class="step-card fade-in">
-          <div class="step-number">2</div>
-          <h3>Ricevi la tua guida</h3>
-          <p>Una meditazione e una riflessione create per te, per come ti senti in quel momento. Mai generiche, mai uguali.</p>
-        </div>
-        <div class="step-card fade-in">
-          <div class="step-number">3</div>
-          <h3>Trasformati ogni giorno</h3>
-          <p>5 minuti al giorno. In 7 giorni senti la differenza. In 90 giorni la calma diventa il tuo stato naturale.</p>
-        </div>
-      </div>
-    </section>
-
-    <div class="section-divider"></div>
-
-    <!-- ========== TRANSFORMATION ========== -->
-    <section style="text-align:center">
-      <p class="section-label">La trasformazione</p>
-      <h2 class="section-title">Da dove sei oggi<br>a dove puoi <em>arrivare.</em></h2>
-      <p class="section-subtitle" style="margin-bottom:40px">Non una promessa vuota. Un percorso concreto, passo dopo passo, verso una versione più serena di te.</p>
-      <div class="transformation">
-        <div class="t-box before fade-in">
-          <div class="t-label">Prima</div>
-          <ul>
-            <li><span class="t-dot"></span>Ansia costante</li>
-            <li><span class="t-dot"></span>Sonno frammentato</li>
-            <li><span class="t-dot"></span>Reattività emotiva</li>
-            <li><span class="t-dot"></span>Mente sempre affollata</li>
-            <li><span class="t-dot"></span>Sensazione di blocco</li>
-          </ul>
-        </div>
-        <div class="t-box after fade-in">
-          <div class="t-label">Dopo 90 giorni</div>
-          <ul>
-            <li><span class="t-dot"></span>Calma radicata</li>
-            <li><span class="t-dot"></span>Sonno rigenerante</li>
-            <li><span class="t-dot"></span>Risposta consapevole</li>
-            <li><span class="t-dot"></span>Chiarezza mentale</li>
-            <li><span class="t-dot"></span>Forza interiore</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <div class="section-divider"></div>
-
-    <!-- ========== TESTIMONIALS ========== -->
-    <section style="text-align:center">
-      <p class="section-label">Cosa dicono</p>
-      <h2 class="section-title">Persone reali.<br><em>Risultati reali.</em></h2>
-      <div style="margin-top:36px">
-        <div class="testimonial-card fade-in">
-          <div class="t-quote">"</div>
-          <p class="t-text">Ero scettica all'inizio. Ma dopo la prima settimana di meditazioni personalizzate ho capito che non era l'ennesima app. La mia ansia mattutina è scesa notevolmente. Dorme meglio mio marito — e sono io quella che medita.</p>
-          <div class="t-author">
-            <img class="t-avatar" src="data:image/jpeg;base64,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" alt="Giulia M.">
-            <div><div class="t-name">Giulia M.</div><div class="t-meta"><span class="verified">✓ Verificato</span> · Milano, IT · <span class="stars">★★★★★</span></div></div>
-          </div>
-        </div>
-        <div class="testimonial-card fade-in">
-          <div class="t-quote">"</div>
-          <p class="t-text">Ho provato Calm, Headspace, podcast infiniti. Niente durava più di tre giorni. Con Risveglio Sereno sono alla settimana sei e non ho saltato un giorno. La differenza è che ogni sessione parla davvero a me.</p>
-          <div class="t-author">
-            <img class="t-avatar" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAAAAAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABkAGQDASIAAhEBAxEB/8QAGwAAAQUBAQAAAAAAAAAAAAAABAACAwUGBwH/xAA2EAACAQMCAwYEBQQCAwAAAAABAgMABBESIQUxQQYTIlFhcTJSgZEUI0KhsQcVwdEkM2KS8P/EABkBAAIDAQAAAAAAAAAAAAAAAAIDAAEEBf/EACIRAAICAgICAgMAAAAAAAAAAAABAhEDIRIxBDJBURMiQ//aAAwDAQACEQMRAD8A6G16D1qFryojGPKoniB6UrkHRI11nrTBMXkA9agaPFK2XEtVZKLu8uVtuz125VSxGF98YzXI14rLb3UghuGilIAfH6h5eorqPFGtTwtba4lEbXDd3EScZfBP+K5zxPhy2hDAq6yb79DQT7NGFqqM/Jdlb4d5IHd9lAHKrXhXDZON9obSxQZ76Ua/RBux+wNVdxohyxwG2xXRf6Rx2Fw/ELvUW4hFiMBuSxncke52PsPOhjHkxmWfCLNn2yQN2WusDZWQj08QrklucxrXY+06a+zN+PKMH7MDXGrfwqR1DEfua0GKPQdGud+lGQrkULGdqNh3q0WycIAKVO6UqKgTTlajZaIIpJC8zFUHIZJ8hSUg7oBddqgaWK0/MnbQD8Ixkt7Cvb6+FsFVFCsRkswyaoBcPdTS3JzjJVC3iYn5s+n8+1Phh+ZCpZPoK/qLbTTdibG6CFZ0nNwqjooHI+uP5rnwv57m1jXvWaPmozuD6Vf8dn4txLjEV5dTf8eFe6htIye7SPGD7seZNUcVktpG41AguW0Z3Xy+lDnxOuSHeNkV8WV9zEwRpZmOkdKvOyt3fcHjW/tZDDO+TnGQQehHUYxQc3DmvYWwTojUnHzN0FT3E11M8AsDoSMZkjdcBj8p9v5qvHg65MvyZq+KOmR9urXi/A7q0vYjBcvCyhk3Rmx9xWCB0yOB853+pp0UJZAxGhyN8HOKlVdYKuF1Drimyx30Z4zrskifbGd6sIG22qojdUl0Zxnl61ZRSqoFLqtDLtBu9Kou9A8qVWUbUivOJ3X9s4U+kgTMA7g/Lnf+acxCqWY7Dc1m+0V4Z+ITIWOkAx/QjFTCt2DkfwUEskt3MYu9wzYDSHkiDmf9epFFiW1jQRQK+hRgE0GkDyTFFcaFAaRh1J3x7DP3NFiIR4AHStLEo8cK5zQl1BF3UzlFzoONt9geVEOwGw50DeO+kCM4Pn5VEr0X1sGTwItrFnUu8r+TdQPWi44EWPAUCorSERQqPSpmL9D9KqqVIjdu2SqgAoeUqS2gjIBBpjNOOtV88rwSiQZGo4b61KITXRBC6eYxRFrch0Hn196rnYvk8skKPpzpsT93My8sjOKDIvkZAv2kQncA0qqhcetKkDaOsOneRsnzDFYniL67y4J3/MYfua2ct2LTRqKhZXERLdAawd6zRy3Ab4lkYH7703Cv1FZHsd2eul/vbWEsBlimBkyBkIyjmR5EH71ccWXQ+pl0nGAPKsfwO6eLtYkqIX7pNSqORJONv9VsO0Jb8YkZIMix6nA6E9PtTmLRSsygcs0KfzZXzgADAAqYleZ3piuitIVGSef2qIjHRj8sZHQV42KSv4AMV4TsahQPPLoU71Q31x30qQbkSHn0GN6OurnJIUZGaqmtpLi6SQHTHGC0zE/p2H8kfeoWi1gVQgdidKLzPU8zQcjnvtZ2ZsnHkOlFI4mjAX4OZx/FCzqe89TzPkOv7UMlaCi6Y4Tf/ClQSuTncjelWU0nZOOxluDllBLh9S7fKP8ARNYbiF2ZZZZG2aQlvrWp7WXUiAWYmAREBMaxgkk7/FXPry6L+DEvP5dq1441FGWTuRfdjeE/jrqac3IhOdfLkFxnH3FX/GLqCKWWCwQMZMmW5bdnz0HkKD4HwtLBbmCSdmaa0EqNyC6tO3tijBwWMpr/ABWFHXHKonZGqKHuMbsSfSvDF4WPKjJ44420RSGT1xihmJ7k8sluXXnVoFnhRVXxNQ8so0lUBJNEFY41LSsKDluicrbxgf8Am1QhX3EaQIGkGM8h1NQ2fD24pdd27xRRaSp7xgBv7kZ6U+aMK7SSsWb13qKG4EMh1aVM+IlZjjTvnA98YoMlqLoOHZMJBHJJBpAZGK+AgqQDjIPlTWj/ACZXI/TgZ5mh5opOC3htrqdZHAHjUHD+tErcC5UBFOOe6mjW1YL0youEaKdlG457Uqddw6rhm1Ek8yaVZnHZojLR0Lts8icRUpKwDICVAHP3xmsZbB5eKwI5d1ZwCueYrW9sn1cSA8lxWVspO64osuw0ZOTyGx3rOskuXZq4R/HdGy7DmDjHAIEk1tPbIbcuG+NFJA/xWkbgjr/0vJ7HcGqDsPZraWd6ti66HlDBxvn0/atRdi9FoWZsKpySp5it0PVHOl2UHEbeSxVJnjjI1YyBnfFUcj4jHU5H3qxvfxVwCHk1ouSMnYVVSHTj3yKNAkEoUeKUkk8lFDSSu2yKEH70Xo2LHdjUTBY1LyHHlVkADbuwJY49TUFmnCrnjltFxZnSwiUyqwz4pVxpBAzkb8utTzSNNkfDH5edVN2yoyyadQRwdPmPL9qXkdR0Mxq5UxX0sX4sw2smuOFcZK8iWY4+maet5PFFs4/9RQdxJ3nF7xwoVWddh5770+chYj7VhllmtJm/Fig1tAou5JGcu4yGxsKVCQkEMSf1GlR85fYDhH6Oq9r0H4zV10iqXsjClz2pWCVQ0clvOrD0MT0qVKXuN/iansSvccOEasSBDEcnmTitTxWRls8A7EUqVdGPSOZLtmEupXIcajjeh36e/wDilSo10Czxzhar38bsW3wdqVKoQEuGIyByqtvPBZO4+LI3pUqXk9WMx+yBrlBHxGUAk6hExJ55K5P71Hek92falSrnS7Oni9SuhH5QpUqVMFH/2Q==" alt="Marco T.">
-            <div><div class="t-name">Marco T.</div><div class="t-meta"><span class="verified">✓ Verificato</span> · Roma, IT · <span class="stars">★★★★★</span></div></div>
-          </div>
-        </div>
-        <div class="testimonial-card fade-in">
-          <div class="t-quote">"</div>
-          <p class="t-text">Dormivo male da anni. Dopo tre settimane di pratica quotidiana, mi sveglio riposata. L'applicazione è bellissima e la meditazione personalizzata è davvero unica. Vale assolutamente i 49€.</p>
-          <div class="t-author">
-            <img class="t-avatar" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAAAAAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABkAGQDASIAAhEBAxEB/8QAHAAAAgIDAQEAAAAAAAAAAAAABQYABAIDBwEI/8QAOBAAAgEDAwIEBAQEBQUAAAAAAQIDAAQRBRIhMUEGEyJRMmFxgQcUkaEjQlKxFYLB0eEWM2Jz0v/EABoBAAMBAQEBAAAAAAAAAAAAAAIDBAEABQb/xAAmEQACAgEDBAICAwAAAAAAAAAAAQIRAxIhMQQiQVEzcRORMmHw/9oADAMBAAIRAxEAPwDk8lwAhORVaOXzH4xgmtU2clduAKxgOyQdeKWkObC8EA8zgDfxgHnH1+dNFq0NpGPNkx746mlrTkuJZnkgjjcRnGGkwS30x+5o/p1hdvIHuraB1Y8uZiQv2xQyXsPG/QftZ7aYfwpFb781dIKjI9QpSuClrJvMM1m6niT4oz/mHT70waRqpv8AZFJGA/8AWvRqW40UQnezLJ6ZrRJ6RnFEWjRZQp65/SgN/rNqkrRxoZmHdelYlYcpJcla8UNhsAkHNAvLtRqS+ahCOdoKHHNX21R85ltSE7kHpQPVJgkiyRnIz+oo1HwTTkuR3sbpdLnKW87yFHBRpAM/MZrqFnfxyWz7wQuAUOexFcGtLuaXEiNnADV1rwxqUep6aHYqWEYzjqOxqaUKkmimEtUWmMWMVKzDRnPxDBxUr1IyTVnlyg06Pl9lRpPcnpk9K2JAdwJb6Z4rQyAEFat2km8hnPqB4ApA4avD1mEtJpj1Zgp9sDNEYvzEl9BHHCjREEZf4AcHt35qaBbNNp3lr3PU/Wjlofyp2zxmIg43MuVP3peru3HqPbsKlhFrN1HcXJiWGO1TMzk4+mBk7s1ZEq/nrKe1X8rM5ZZoo19MjYJBx/L060yTSp5UttbSoyTcOFUAH5VUt7BWu43VUIhU4YD4mPU/bgZrXNegVjlfIPuW1Waa48+e2gtkfyt68yOGXOdmeBwec0EeDTbZ8NNdycE72l8sEDrgKOn3phu4C95cpIRhgrqpHxY4P7HNZa1pUGtlZAjJtUIMHp79K5NHSjK/YAFrZ3K4hnuUcjP/AHt2foTmlvVrN7Z0BkMkbZwduCD7GmsaMbRkkjwNg5VeAf8AmgmukkRYPIYkDsaKL3Bmu00wym3hjjVCFfA8wDJB9iK6B4SuDaaELpVbYxIb2x3x/ek7w+tspD3+VjI2+WQDv+Yp2sL3Sxpp09EZVLt5WeoBOcZ+nepsr3qijDF1dj5pswn02CeNXCSrvGWqVNMjaHTLaIAqqRqFBHbHFSroRjpRFKT1Pg+Yo5sPsPTtW3zDA5kA47YoimhxOw9T7vrWi80+a0PRtndscGsa8mRfg6T4VGdMj5yW5zTdHbefHtYekjkdqTPCkymxi2ZK/CMjBxTi92YIgijLsOgqOfJ6eJJxB+oLBC621jbx+cTy+34az06wkaAnksRk1jLEsoyrFWzyR3q3aW1xChMcoXPUHOK5cG7XYF1WPyJldlynRiO3zrySwubf+Jazq0bjow61YvUuGmZZmBRuD9Ks2ki/l2gY52DjPtXWc0mALmznlXM0yBO6oKTPEBWO+8tfhjA4p8v2CE4pHjtpdX1+4REJw2AQenHHH2psCXKkiql+lw0dvFEpxgE5yMU5ReFfEMFu5tNIjmWaPCSJcoSAenB6fahDaC9hPFM1tjKMyxxr1Crkk/60/alrv/Tvg2INMbu4m2xxlwF25QEdMHC/7c0yMY33CXkktojnBH5NtFHtxtRVwPkMVK+bLrU7rU7l7m9vJpZjxuZz0HQD2FSqPyf0TaDsVj4S0iNgTbtIf/NzQL8SrC3sdDtorO1SMNKGkZV6KPc/Wny2xmvdR0q01mH8pcqSrph8e3b9zW1aoJbOzlXhm/jFytusXlhUTB3Z344Lff2p7vgrxQsjbXIPTrQqD8L20+WW9TWiY4ELRiQbQF54Y9qxt71nZFc/y8fMVBmxuLTPQwZFKLiD5bjUbK5kIlLx5ypZM/qavR6tqRhLPapJgZUqSOKLW9usoO5c1rfS48n0EKewJFCpx8orjSW6F25165dxEbT+IT0V81ctmklKMoKlQS30rfPaQ25LRoo+1VBcrBBIoPxHgCsbT4Fyq9ipqUrHeV5boqjuTwKngfw1aalfagbtpRIoG3y5MdGKnOPmKF3qpql0lodQgtQzbSzsR6sgAcV1Dw34ZtPDVm0cDPJM4xJK/U47Adhmq8GO+SDPk9CL4uuhY67JYwRiNIITGpZixcOPUSTn3x9qWtSv5tUigivGM0cChUXfgcdzx1pr/EOFBrsD49TQcn35pMcKAaGbqTRsFtYLewtS3q8zP/s/4qVdkiXI5PSpWajdB0ew/EDTLpiI4LoqpAZlCsFz0zg0Sm8YwQN5trBLPuj/AJxsAPb50k38I/wiQW7wtECCyxIOx+VELSIXFhDIe6CseeS4Cj08XHUeat4h1TVwYriULB2hjGE+/wDV96v6aI7izhVzjKgK/wDS1DRa5fbgVf04eRI0Eo9JOVNIlNy3Y2EVHZB63na3fZLhSByOx+Yq3LfRsh6dKHsiSQjdyB0BPSsGsI/J5kJ/zYoB+ugXfXRmkMcQLH5DND/KYM24njr8jTAYNsZRCFUD+XjNCplRJFB4XcOBWpinuZx+FdILK+pQXCliHSeFypDdenIPTuKbda8SRaXbmeKNbhSUPMm3G8tx7k+k/ai80Nre6ZAdqkMoYD2Nc18aaeIrPUvQvnp5DWsndQSwbH702GWWqkwXihSclZT8T6qmtTxXbRtBsj2bQCQeSetAraBLqTaRLsJ4ZSP7HFeaVHG77Z2kmI/rZjn7Zo86TSRq1tbpHEqlgW4X2oHKTdcnpxxdPFapRSXqyhL4YkkYNFeRBMcCVSG/bNSvRNGiKb+2SWZxuDHpjOBj5ccVKNYp1/Ikl1PSW6xv9gax1S5aOeF4XW1fd5e0D0ZOTx3J4Hy5pt8MTG50wJwfLYr/AK/60F1fRhZ6Tp8jyTwyTylH2nG0Y9II684/eifgmIW/562Jbcsm/BPJB4zRZYxSuJF02ac3KMvv/fsOPaFcmtBwHXd34Jo08eBzVOe3BUkD6fI1JZXRYtVLx7cjP96jRShj6QB9KloykZU4YjoelXdzBeRXG6bBk6yBMFv0ocsG67Qy/Ao3YPv2otPl8jp7UP2FnJJokC0GLa/kiAVX9AwAKo69Ml1ewbiQwRRwu4Zy3UV5EhBHPNC9RklGsWhU+ncTgZycKf8Af9aLGt7QvNOo0T/DH8tvKiMnoIj2jO3J55+lWmsFlskjjnRrdlAJzncvy+tFIL2OOMOX3YwWy3P1PsTxS/ompJNb3yvnZDdMEkC+kK3IBxwO/FHCUWrQluV0bboXHnny9Qit0xwgg3/fORUrKSSZmzFe2gX2KH/6qUesNYih4rgXULi4tpmcRx5KbDgggZH70M8Ls6a9YsHb+LFtcf1ZXPPzyBUqVi+OQEPlX0zosiApnv0qo4H61KlSFiKkRKg4PRjW4TyBSAeKlStDXBTmnk3HntXsLbgCcVKlGLZaSlE3MrfiLFExyiqVCnp6uDUqVR03L+iHq+F9jFHa213Pdx3VvFOqygDzEB4wDWu0t4LdbqGKGNIxIVICgbvr71KlY+TYC5q0aWuoNHEuEKhse2RUqVKmfJ9Xg3xRb9H/2Q==" alt="Anna B.">
-            <div><div class="t-name">Anna B.</div><div class="t-meta"><span class="verified">✓ Verificato</span> · Torino, IT · <span class="stars">★★★★★</span></div></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="section-divider"></div>
-
-    <!-- ========== OFFER + PRICING ========== -->
-    <section class="offer-section" id="offerta">
-      <p class="section-label">Cosa ottieni</p>
-      <h2 class="section-title">Tutto quello che ti serve,<br><em>in un unico luogo.</em></h2>
-
-      <div style="max-width:500px;margin:36px auto 0">
-        <div class="offer-item fade-in">
-          <div class="offer-icon">🧘</div>
-          <div><h3>Meditazioni personalizzate ogni giorno</h3><p>Il sistema analizza il tuo stato emotivo e crea una pratica su misura. Ogni giorno diversa, ogni giorno tua.</p></div>
-        </div>
-        <div class="offer-item fade-in">
-          <div class="offer-icon">🎧</div>
-          <div><h3>9 Masterclass Audio in italiano</h3><p>Meditazioni guidate professionali su ansia, sonno, forza interiore, gratitudine, accettazione e molto altro.</p></div>
-        </div>
-        <div class="offer-item fade-in">
-          <div class="offer-icon">📖</div>
-          <div><h3>5 Percorsi di studio completi</h3><p>Approfondimenti ispirati ai più grandi maestri della crescita interiore e della mindfulness.</p></div>
-        </div>
-        <div class="offer-item fade-in">
-          <div class="offer-icon">📝</div>
-          <div><h3>Diario guidato con riflessioni quotidiane</h3><p>Gratitudine, intenzione e riflessione — ogni giorno, con spunti personalizzati per la tua crescita.</p></div>
-        </div>
-        <div class="offer-item fade-in">
-          <div class="offer-icon">🎯</div>
-          <div><h3>Piano giornaliero su misura</h3><p>Scegli la tua intenzione — ansia, sonno, focus o forza emotiva — e il percorso si adatta a te.</p></div>
-        </div>
-        <div class="offer-item fade-in">
-          <div class="offer-icon">∞</div>
-          <div><h3>Accesso per sempre + aggiornamenti</h3><p>Paghi una volta, accedi per sempre. Nuovi contenuti aggiunti regolarmente. Nessun abbonamento, mai.</p></div>
-        </div>
-      </div>
-
-      <!-- PRICING BOX -->
-      <div class="pricing-box fade-in">
-        <div class="pricing-label">Accesso completo · Una tantum</div>
-        <div class="pricing-amount"><span class="curr">€</span>49</div>
-        <div class="pricing-note">Pagamento sicuro · Accesso immediato</div>
-        <div class="pricing-features">
-          <div class="p-feature"><div class="p-check"><svg viewBox="0 0 10 10"><polyline points="1,5 4,8 9,2"/></svg></div><span>Meditazioni personalizzate illimitate</span></div>
-          <div class="p-feature"><div class="p-check"><svg viewBox="0 0 10 10"><polyline points="1,5 4,8 9,2"/></svg></div><span>9 Masterclass Audio in italiano</span></div>
-          <div class="p-feature"><div class="p-check"><svg viewBox="0 0 10 10"><polyline points="1,5 4,8 9,2"/></svg></div><span>5 Percorsi di studio completi</span></div>
-          <div class="p-feature"><div class="p-check"><svg viewBox="0 0 10 10"><polyline points="1,5 4,8 9,2"/></svg></div><span>Diario guidato con riflessioni</span></div>
-          <div class="p-feature"><div class="p-check"><svg viewBox="0 0 10 10"><polyline points="1,5 4,8 9,2"/></svg></div><span>Accesso vitalizio + aggiornamenti</span></div>
-          <div class="p-feature"><div class="p-check"><svg viewBox="0 0 10 10"><polyline points="1,5 4,8 9,2"/></svg></div><span>Garanzia 30 giorni soddisfatti o rimborsati</span></div>
-        </div>
-        <a href="https://pay.hotmart.com/H105239735W?off=8skatnnb&bid=1776294335191" class="cta-main" onclick="fbq('track','InitiateCheckout')">Voglio iniziare il mio percorso →</a>
-        <div class="pricing-safe">
-          <svg viewBox="0 0 16 16"><path d="M8 1L1 4v4c0 4 3 7 7 8 4-1 7-4 7-8V4L8 1z"/></svg>
-          Garanzia 30 giorni · Pagamento sicuro
-        </div>
-      </div>
-    </section>
-
-    <div class="section-divider"></div>
-
-    <!-- ========== GUARANTEE ========== -->
-    <section>
-      <div class="guarantee-box fade-in">
-        <div class="g-icon">🛡️</div>
-        <h3>Garanzia 30 giorni<br>Soddisfatti o Rimborsati</h3>
-        <p>Prova Risveglio Sereno per 30 giorni. Se non senti un cambiamento reale nella tua calma, nel tuo sonno o nella tua chiarezza mentale, ti rimborsiamo il 100% — senza domande, senza complicazioni. Il rischio è zero. La possibilità di cambiare è enorme.</p>
-      </div>
-    </section>
-
-    <!-- ========== URGENCY ========== -->
-    <section style="text-align:center;padding-top:40px;padding-bottom:40px">
-      <h2 class="section-title fade-in" style="font-size:clamp(1.45rem,4.5vw,2.1rem)">Il momento migliore era ieri.<br>Il secondo migliore è <em>adesso.</em></h2>
-      <p class="section-subtitle fade-in" style="margin-top:14px">Ogni giorno che aspetti è un giorno in più con l'ansia, il sonno difficile, la reattività. La pace interiore non arriva da sola.</p>
-    </section>
-
-    <div class="section-divider"></div>
-
-    <!-- ========== FAQ ========== -->
-    <section style="text-align:center">
-      <p class="section-label">Hai dubbi?</p>
-      <h2 class="section-title">Domande <em>frequenti</em></h2>
-      <div class="faq-list">
-        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Devo pagare ogni mese?</span><span class="tog">+</span></div><div class="faq-a"><div class="faq-a-inner">No. Paghi una sola volta €49 e hai accesso per sempre. Nessun abbonamento, nessun rinnovo automatico, nessuna sorpresa. È tuo per sempre, inclusi tutti gli aggiornamenti futuri.</div></div></div>
-        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Come funziona la personalizzazione?</span><span class="tog">+</span></div><div class="faq-a"><div class="faq-a-inner">Ogni giorno ti viene chiesto come ti senti. In base alla tua risposta, il sistema crea una meditazione guidata e una riflessione pensate specificamente per il tuo stato emotivo del momento. Non riceverai mai due sessioni uguali.</div></div></div>
-        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Non ho mai meditato. Funziona anche per me?</span><span class="tog">+</span></div><div class="faq-a"><div class="faq-a-inner">Assolutamente sì. Risveglio Sereno è pensato per chi inizia da zero. Le sessioni partono da 5 minuti e ti guidano passo dopo passo. Non serve nessuna esperienza precedente — solo la volontà di provare.</div></div></div>
-        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Quanto tempo devo dedicarci ogni giorno?</span><span class="tog">+</span></div><div class="faq-a"><div class="faq-a-inner">Bastano 5 minuti al giorno. È pensato per adattarsi alla tua vita, non per complicarla. Puoi farlo al mattino, nella pausa pranzo, o prima di dormire — quando preferisci.</div></div></div>
-        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Funziona su iPhone e Android?</span><span class="tog">+</span></div><div class="faq-a"><div class="faq-a-inner">Sì. Risveglio Sereno funziona su qualsiasi dispositivo con un browser — smartphone, tablet o computer. Non c'è niente da scaricare. Accedi e inizi subito.</div></div></div>
-        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>E se non sono soddisfatto?</span><span class="tog">+</span></div><div class="faq-a"><div class="faq-a-inner">Hai 30 giorni di garanzia completa. Se per qualsiasi motivo non sei soddisfatto, ti rimborsiamo il 100% senza fare domande. Basta inviarci un messaggio e ricevi il rimborso entro pochi giorni.</div></div></div>
-      </div>
-    </section>
-
-    <div class="section-divider"></div>
-
-    <!-- ========== FINAL CTA ========== -->
-    <section class="final-cta">
-      <h2 class="section-title fade-in">La pace interiore<br>è una <em>scelta.</em></h2>
-      <p class="section-subtitle fade-in" style="margin-bottom:32px">€49 · Una tantum · Garanzia 30 giorni · Accesso immediato</p>
-      <a href="https://pay.hotmart.com/H105239735W?off=8skatnnb&bid=1776294335191" class="final-cta-btn fade-in" onclick="fbq('track','InitiateCheckout')">Sì, voglio la mia pace interiore →</a>
-      <p class="final-details fade-in" style="margin-top:16px">Pagamento sicuro · Accesso istantaneo · Nessun abbonamento</p>
-    </section>
-
-    <!-- ========== FOOTER ========== -->
-    <footer>
-      <div class="f-logo"><span style="width:8px;height:8px;border-radius:50%;background:var(--gold);display:inline-block;box-shadow:0 0 8px rgba(201,168,76,0.4)"></span> Risveglio Sereno</div>
-      <p class="f-desc">Il percorso di 90 giorni per trasformare l'ansia in pace radicata. Personalizzato per te.</p>
-      <div class="f-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Termini di Servizio</a>
-        <a href="#">Contattaci</a>
-      </div>
-      <p class="f-copy">© 2025 Risveglio Sereno. Tutti i diritti riservati.</p>
-    </footer>
-
-  </div><!-- .content-wrap -->
-
-  <!-- STICKY BOTTOM BAR -->
-  <div class="sticky-bottom" id="stickyBottom">
-    <div class="sb-info">
-      <div class="sb-name">Risveglio Sereno</div>
-      <div class="sb-price">Accesso per sempre · Solo €49</div>
+    <div class="cta-group">
+      <a href="https://app.risvegliosereno.com" class="cta-primary" onclick="fbq('track','Lead')">Prova gratis per 7 giorni</a>
+      <a href="https://pay.hotmart.com/H105239735W?off=8skatnnb&bid=1776294335191" class="cta-secondary" onclick="fbq('track','InitiateCheckout')">Accesso completo — €49</a>
     </div>
-    <a href="https://pay.hotmart.com/H105239735W?off=8skatnnb&bid=1776294335191" class="sb-cta" onclick="fbq('track','InitiateCheckout')">Inizia ora</a>
+    <div class="cta-note">Nessuna carta richiesta per la prova gratuita</div>
+  </section>
+
+  <!-- proof bar -->
+  <div class="proof-bar">
+    <div class="proof-item">
+      <div class="proof-num">4.9</div>
+      <div class="proof-label">Valutazione</div>
+    </div>
+    <div class="proof-item">
+      <div class="proof-num">90</div>
+      <div class="proof-label">Giorni</div>
+    </div>
+    <div class="proof-item">
+      <div class="proof-num">5 min</div>
+      <div class="proof-label">Al giorno</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ═══ PAIN ═══ -->
+  <section class="sec fade">
+    <div class="sec-label">Ti riconosci?</div>
+    <h2 class="sec-title">Il tuo sistema nervoso ti sta chiedendo <em>aiuto.</em></h2>
+    <div class="pain-grid">
+      <div class="pain-item">
+        <div class="pain-x">✕</div>
+        <p><strong>Ti svegli già stanca/o</strong> — la notte non basta mai, il cervello non si spegne.</p>
+      </div>
+      <div class="pain-item">
+        <div class="pain-x">✕</div>
+        <p><strong>L'ansia ti anticipa tutto</strong> — il futuro pesa più del presente.</p>
+      </div>
+      <div class="pain-item">
+        <div class="pain-x">✕</div>
+        <p><strong>Hai già provato di tutto</strong> — meditazione, podcast, libri. Niente dura.</p>
+      </div>
+    </div>
+    <div class="pain-bridge">
+      <p>E se il problema non fossi tu, ma <strong>lo strumento?</strong></p>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ═══ HOW ═══ -->
+  <section class="sec fade">
+    <div class="sec-label">Come funziona</div>
+    <h2 class="sec-title">3 passi verso la <em>calma.</em></h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-n">1</div>
+        <div><h3>Racconta come stai</h3><p>Ogni giorno, il percorso ti chiede come ti senti. Da lì nasce la tua pratica.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-n">2</div>
+        <div><h3>Ricevi la tua guida</h3><p>Una meditazione creata per te, per come ti senti in quel momento. Mai generica.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-n">3</div>
+        <div><h3>Trasformati</h3><p>5 minuti al giorno. In 7 giorni senti la differenza. In 90, la calma è naturale.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ═══ TRANSFORMATION ═══ -->
+  <section class="sec fade">
+    <div class="sec-label">Il cambiamento</div>
+    <h2 class="sec-title">Da dove sei a dove puoi <em>arrivare.</em></h2>
+    <div class="transform-grid">
+      <div class="t-col before">
+        <div class="t-col-label">Prima</div>
+        <ul>
+          <li><span class="dot"></span>Ansia costante</li>
+          <li><span class="dot"></span>Sonno frammentato</li>
+          <li><span class="dot"></span>Reattività emotiva</li>
+          <li><span class="dot"></span>Mente affollata</li>
+        </ul>
+      </div>
+      <div class="t-col after">
+        <div class="t-col-label">Dopo 90 giorni</div>
+        <ul>
+          <li><span class="dot"></span>Calma radicata</li>
+          <li><span class="dot"></span>Sonno rigenerante</li>
+          <li><span class="dot"></span>Risposta consapevole</li>
+          <li><span class="dot"></span>Chiarezza mentale</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ═══ TESTIMONIALS ═══ -->
+  <section class="sec fade">
+    <div class="sec-label">Cosa dicono</div>
+    <h2 class="sec-title">Risultati <em>reali.</em></h2>
+    <div class="reviews" id="reviewsContainer">
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ═══ PRICING ═══ -->
+  <section class="sec pricing-sec" id="prezzi">
+    <div class="sec-label">Scegli il tuo percorso</div>
+    <h2 class="sec-title">Inizia <em>oggi.</em></h2>
+    <div class="pricing-cards">
+      <div class="p-card free fade">
+        <div class="p-tag">Consigliato</div>
+        <div class="p-price">Gratis</div>
+        <div class="p-desc">7 giorni di prova completa</div>
+        <div class="p-features">
+          <div class="p-feat"><div class="ck"><svg viewBox="0 0 10 10"><polyline points="1,5 4,8 9,2"/></svg></div>Meditazioni personalizzate</div>
+          <div class="p-feat"><div class="ck"><svg viewBox="0 0 10 10"><polyline points="1,5 4,8 9,2"/></svg></div>Diario guidato</div>
+          <div class="p-feat"><div class="ck"><svg viewBox="0 0 10 10"><polyline points="1,5 4,8 9,2"/></svg></div>Nessuna carta richiesta</div>
+        </div>
+        <a href="https://app.risvegliosereno.com" class="p-btn" onclick="fbq('track','Lead')">Inizia la prova gratuita →</a>
+      </div>
+      <div class="p-card full fade">
+        <div class="p-tag">Accesso completo</div>
+        <div class="p-price"><span class="small">€</span>49</div>
+        <div class="p-desc">Pagamento unico · Per sempre</div>
+        <div class="p-features">
+          <div class="p-feat"><div class="ck"><svg viewBox="0 0 10 10"><polyline points="1,5 4,8 9,2"/></svg></div>Tutto della prova gratuita</div>
+          <div class="p-feat"><div class="ck"><svg viewBox="0 0 10 10"><polyline points="1,5 4,8 9,2"/></svg></div>9 Masterclass Audio</div>
+          <div class="p-feat"><div class="ck"><svg viewBox="0 0 10 10"><polyline points="1,5 4,8 9,2"/></svg></div>5 Percorsi di studio</div>
+          <div class="p-feat"><div class="ck"><svg viewBox="0 0 10 10"><polyline points="1,5 4,8 9,2"/></svg></div>Piano giornaliero su misura</div>
+          <div class="p-feat"><div class="ck"><svg viewBox="0 0 10 10"><polyline points="1,5 4,8 9,2"/></svg></div>Accesso vitalizio + aggiornamenti</div>
+          <div class="p-feat"><div class="ck"><svg viewBox="0 0 10 10"><polyline points="1,5 4,8 9,2"/></svg></div>Garanzia 30 giorni</div>
+        </div>
+        <a href="https://pay.hotmart.com/H105239735W?off=8skatnnb&bid=1776294335191" class="p-btn" onclick="fbq('track','InitiateCheckout')">Accesso completo — €49 →</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ═══ GUARANTEE ═══ -->
+  <section class="sec fade">
+    <div class="guarantee">
+      <div style="font-size:2rem">🛡️</div>
+      <h3>30 giorni di garanzia</h3>
+      <p>Se non senti un cambiamento reale, ti rimborsiamo il 100%. Nessuna domanda, nessuna complicazione.</p>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ═══ FAQ ═══ -->
+  <section class="sec fade">
+    <div class="sec-label">Domande</div>
+    <h2 class="sec-title">Hai <em>dubbi?</em></h2>
+    <div class="faq-list">
+      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Devo pagare ogni mese?</span><span class="tog">+</span></div><div class="faq-a"><div class="faq-a-inner">No. Paghi una sola volta €49 e hai accesso per sempre. Nessun abbonamento. La prova gratuita di 7 giorni non richiede carta di credito.</div></div></div>
+      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Non ho mai meditato. Va bene?</span><span class="tog">+</span></div><div class="faq-a"><div class="faq-a-inner">Perfetto. Le sessioni partono da 5 minuti e ti guidano passo dopo passo. Non serve esperienza.</div></div></div>
+      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Come funziona la personalizzazione?</span><span class="tog">+</span></div><div class="faq-a"><div class="faq-a-inner">Ogni giorno ti viene chiesto come ti senti. In base alla tua risposta, viene creata una meditazione unica per il tuo stato emotivo. Non riceverai mai due sessioni uguali.</div></div></div>
+      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Funziona su iPhone e Android?</span><span class="tog">+</span></div><div class="faq-a"><div class="faq-a-inner">Sì. Funziona dal browser su qualsiasi dispositivo. Non c'è niente da scaricare.</div></div></div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ═══ FINAL CTA ═══ -->
+  <section class="final-cta fade">
+    <h2 class="sec-title" style="margin-bottom:8px">La pace interiore è una <em>scelta.</em></h2>
+    <p style="font-size:0.82rem;color:var(--text2);margin-bottom:24px">Inizia con 7 giorni gratuiti. Senza impegno.</p>
+    <div class="cta-group">
+      <a href="https://app.risvegliosereno.com" class="cta-primary" onclick="fbq('track','Lead')">Prova gratis per 7 giorni</a>
+      <a href="https://pay.hotmart.com/H105239735W?off=8skatnnb&bid=1776294335191" class="cta-secondary" onclick="fbq('track','InitiateCheckout')">Accesso completo — €49</a>
+    </div>
+    <div class="cta-note" style="margin-top:12px">Garanzia 30 giorni · Pagamento sicuro · Accesso immediato</div>
+  </section>
+
+  <footer>
+    <p style="margin-bottom:8px"><span class="nav-dot" style="display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--gold)"></span> Risveglio Sereno</p>
+    <p>Il percorso di 90 giorni verso la pace interiore.</p>
+    <p style="margin-top:12px"><a href="#">Privacy</a> · <a href="#">Termini</a> · <a href="#">Contatti</a></p>
+  </footer>
+
+  <!-- STICKY BOTTOM -->
+  <div class="sticky-b" id="stickyB">
+    <div class="sb-text">
+      <div class="sb-title">Risveglio Sereno</div>
+      <div class="sb-sub">7 giorni gratis · Poi €49</div>
+    </div>
+    <a href="https://app.risvegliosereno.com" class="sb-btn" onclick="fbq('track','Lead')">Prova gratis</a>
   </div>
 
   <script>
-    // Generate star particles
-    (function() {
-      const bg = document.getElementById('starsBg');
-      const count = 60;
-      for (let i = 0; i < count; i++) {
-        const star = document.createElement('div');
-        star.className = 'star';
-        star.style.left = Math.random() * 100 + '%';
-        star.style.top = Math.random() * 100 + '%';
-        star.style.setProperty('--dur', (3 + Math.random() * 5) + 's');
-        star.style.setProperty('--delay', Math.random() * 5 + 's');
-        if (Math.random() > 0.7) {
-          star.style.width = '3px';
-          star.style.height = '3px';
-          star.style.background = 'rgba(232, 213, 160, 0.3)';
-        }
-        bg.appendChild(star);
-      }
-    })();
+    // Insert testimonial photos
+    const reviewData = [
+      { text: '"Dopo 7 giorni dormivo meglio. Dopo 30, l\'ansia mattutina era scomparsa. Non pensavo fosse possibile."',
+        name: 'Giulia M.', loc: 'Milano, IT', initial: 'G', photoIdx: 0 },
+      { text: '"Ho provato Calm, Headspace, podcast. Niente durava. Con Risveglio Sereno sono alla settimana sei senza saltare un giorno."',
+        name: 'Marco T.', loc: 'Roma, IT', initial: 'M', photoIdx: 1 },
+      { text: '"Dormivo male da anni. Tre settimane di pratica e mi sveglio riposata. Vale ogni centesimo."',
+        name: 'Anna B.', loc: 'Torino, IT', initial: 'A', photoIdx: 2 }
+    ];
+    const photoData = ['data:image/jpeg;base64,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', 'data:image/jpeg;base64,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', 'data:image/jpeg;base64,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'];
+
+    const rc = document.getElementById('reviewsContainer');
+    reviewData.forEach((r, i) => {
+      const hasPhoto = photoData[i] && photoData[i] !== 'PLACEHOLDER';
+      const avatarHTML = hasPhoto
+        ? `<img class="review-avatar" src="${photoData[i]}" alt="${r.name}">`
+        : `<div class="review-avatar" style="display:flex;align-items:center;justify-content:center;background:var(--gold-d);font-family:var(--serif);font-weight:600;color:var(--gold)">${r.initial}</div>`;
+
+      rc.innerHTML += `
+        <div class="review">
+          <p class="review-text">${r.text}</p>
+          <div class="review-author">
+            ${avatarHTML}
+            <div>
+              <div class="review-name">${r.name}</div>
+              <div class="review-meta">✓ Verificato · ${r.loc} · <span class="stars">★★★★★</span></div>
+            </div>
+          </div>
+        </div>`;
+    });
+
+    // Phone mood cycling
+    const moods = document.querySelectorAll('.ph-mood-btn');
+    const titles = ['Respiro della Calma', 'Sonno Profondo', 'Rilascio Emotivo'];
+    const descs = ['7 min · Per la tua ansia di oggi', '10 min · Per un riposo rigenerante', '5 min · Per lasciare andare la tensione'];
+    let mi = 0;
+    setInterval(() => {
+      mi = (mi + 1) % 3;
+      moods.forEach((m, i) => m.classList.toggle('active', i === mi));
+      document.getElementById('medTitle').textContent = titles[mi];
+      document.getElementById('medDesc').textContent = descs[mi];
+    }, 3000);
 
     // FAQ
     function toggleFaq(el) {
-      const isOpen = el.classList.contains('open');
+      const open = el.classList.contains('open');
       document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-      if (!isOpen) el.classList.add('open');
+      if (!open) el.classList.add('open');
     }
 
-    // Sticky bottom
-    const stickyBottom = document.getElementById('stickyBottom');
-    function handleScroll() {
-      const heroH = document.querySelector('.hero').offsetHeight;
-      stickyBottom.classList.toggle('visible', window.scrollY > heroH);
-    }
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    // Sticky bar
+    const sb = document.getElementById('stickyB');
+    window.addEventListener('scroll', () => {
+      sb.classList.toggle('show', window.scrollY > 500);
+    }, { passive: true });
 
-    // Fade-in observer
-    const fadeObs = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          fadeObs.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
-
-    document.querySelectorAll('.fade-in').forEach(el => fadeObs.observe(el));
-
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', function(e) {
-        e.preventDefault();
-        const t = document.querySelector(this.getAttribute('href'));
-        if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
-    });
+    // Fade in
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); obs.unobserve(e.target); }});
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade').forEach(el => obs.observe(el));
   </script>
-
 </body>
 </html>
