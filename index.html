@@ -277,7 +277,11 @@ section.alt{background:var(--bg2)}
   padding:12px;
   border:1px solid rgba(196,164,78,0.22);
   box-shadow:0 30px 80px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.06);
-  animation:float 8s ease-in-out infinite;
+  animation:phoneFloat 8s ease-in-out infinite;
+}
+@keyframes phoneFloat{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-10px)}
 }
 .phone::before{content:"";position:absolute;top:14px;left:50%;transform:translateX(-50%);width:80px;height:18px;background:#000;border-radius:12px;z-index:3}
 .phone-screen{
