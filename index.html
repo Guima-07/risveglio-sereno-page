@@ -1,1005 +1,827 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <title>Risveglio Sereno — Pace interiore in 90 giorni</title>
-  <meta name="description" content="Il percorso personalizzato di 90 giorni che trasforma l'ansia in calma. Solo €49, garanzia 30 giorni.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Risveglio Sereno — Smetti di sopravvivere al rumore mentale</title>
+<meta name="description" content="Il percorso di 90 giorni che trasforma l'ansia in calma e il sonno frammentato in riposo profondo. Personalizzato per te. 5 minuti al giorno. Garanzia 30 giorni.">
+<meta name="theme-color" content="#06060a">
+<meta property="og:title" content="Risveglio Sereno — La tua pace interiore in 90 giorni">
+<meta property="og:description" content="Smetti di sopravvivere al rumore mentale. 5 minuti al giorno. 90 giorni. Una vita diversa.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://risvegliosereno.com">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%95%AF%EF%B8%8F%3C/text%3E%3C/svg%3E">
 
-  <!-- Meta Pixel Code -->
-  <script>
-  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-  document,'script','https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init','1607077463849547');fbq('track','PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1607077463849547&ev=PageView&noscript=1"/></noscript>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1607077463849547');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1607077463849547&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
 
-  <!-- Microsoft Clarity -->
-  <script type="text/javascript">
-  (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
   t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
   y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  })(window,document,"clarity","script","wctpcwte36");
-  </script>
+})(window,document,"clarity","script","wctpcwte36");
+</script>
+<!-- End Microsoft Clarity -->
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    :root {
-      --bg: #06060a;
-      --bg2: #0b0b12;
-      --bg3: #10101a;
-      --surface: rgba(255,255,255,0.04);
-      --border: rgba(255,255,255,0.07);
-      --gold: #c4a44e;
-      --gold-l: #e2cc8a;
-      --gold-d: rgba(196,164,78,0.15);
-      --gold-glow: rgba(196,164,78,0.08);
-      --text: #f0ece4;
-      --text2: rgba(240,236,228,0.6);
-      --text3: rgba(240,236,228,0.35);
-      --green: #5fa85f;
-      --red: #c44e4e;
-      --serif: 'Playfair Display', Georgia, serif;
-      --sans: 'Outfit', system-ui, sans-serif;
-    }
+<style>
+:root{
+  --bg:#06060a;
+  --bg2:#0b0b12;
+  --bg3:#10101a;
+  --gold:#c4a44e;
+  --gold-light:#e2cc8a;
+  --gold-deep:#9a7f3a;
+  --gold-glow:rgba(196,164,78,0.10);
+  --text:#f0ece4;
+  --text2:rgba(240,236,228,0.65);
+  --text3:rgba(240,236,228,0.38);
+  --border:rgba(196,164,78,0.14);
+  --border-strong:rgba(196,164,78,0.35);
+  --green:#5fa85f;
+  --red:#c44e4e;
+  --radius:18px;
+  --radius-sm:10px;
+  --shadow-gold:0 18px 60px rgba(196,164,78,0.22);
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Outfit',sans-serif;
+  font-weight:400;
+  line-height:1.6;
+  overflow-x:hidden;
+  min-height:100vh;
+  position:relative;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(800px circle at 20% 10%, rgba(196,164,78,0.06), transparent 50%),
+    radial-gradient(900px circle at 85% 80%, rgba(196,164,78,0.04), transparent 50%);
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+h1,h2,h3,h4{font-family:'Playfair Display',serif;font-weight:600;line-height:1.15;letter-spacing:-0.01em}
+em,.italic{font-family:'Playfair Display',serif;font-style:italic;color:var(--gold-light)}
 
-    * { margin:0; padding:0; box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body {
-      background:var(--bg);
-      color:var(--text);
-      font-family:var(--sans);
-      font-weight:300;
-      line-height:1.6;
-      overflow-x:hidden;
-      -webkit-font-smoothing:antialiased;
-    }
+/* ===== STARS ===== */
+.stars{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.star{position:absolute;background:var(--gold-light);border-radius:50%;opacity:0;animation:twinkle 4s infinite ease-in-out}
+@keyframes twinkle{
+  0%,100%{opacity:0;transform:scale(.6)}
+  50%{opacity:.9;transform:scale(1)}
+}
 
-    /* ── NAV ── */
-    nav {
-      position:fixed; top:0; left:0; right:0; z-index:100;
-      background:rgba(6,6,10,0.85);
-      backdrop-filter:blur(20px);
-      -webkit-backdrop-filter:blur(20px);
-      padding:10px 16px;
-      display:flex; align-items:center; justify-content:space-between;
-      border-bottom:1px solid var(--border);
-    }
-    .nav-brand {
-      font-family:var(--serif);
-      font-size:0.95rem;
-      font-weight:500;
-      display:flex; align-items:center; gap:8px;
-    }
-    .nav-dot {
-      width:8px; height:8px; border-radius:50%;
-      background:var(--gold);
-      box-shadow:0 0 12px rgba(196,164,78,0.5);
-    }
-    .nav-cta {
-      font-size:0.72rem; font-weight:500;
-      padding:7px 14px; border-radius:50px;
-      background:var(--gold); color:var(--bg);
-      text-decoration:none; white-space:nowrap;
-    }
+/* ===== CONTAINER ===== */
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px;position:relative;z-index:2}
 
-    /* ── HERO ── */
-    .hero {
-      padding:76px 20px 40px;
-      max-width:440px; margin:0 auto;
-      text-align:center;
-      position:relative;
-    }
-    .hero::before {
-      content:'';
-      position:absolute; top:0; left:50%; transform:translateX(-50%);
-      width:500px; height:500px;
-      background:radial-gradient(circle, var(--gold-glow) 0%, transparent 60%);
-      pointer-events:none;
-    }
-    .hero-badge {
-      display:inline-flex; align-items:center; gap:6px;
-      padding:6px 14px; border-radius:50px;
-      background:var(--gold-d);
-      border:1px solid rgba(196,164,78,0.2);
-      font-size:0.68rem; font-weight:500;
-      color:var(--gold-l);
-      margin-bottom:18px;
-      letter-spacing:0.04em;
-    }
-    .hero-badge .pulse {
-      width:6px; height:6px; border-radius:50%;
-      background:var(--green);
-      animation:pulse 2s infinite;
-    }
-    @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.3;} }
+/* ===== NAV ===== */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  backdrop-filter:blur(20px) saturate(160%);
+  -webkit-backdrop-filter:blur(20px) saturate(160%);
+  background:rgba(6,6,10,0.72);
+  border-bottom:1px solid var(--border);
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font-family:'Playfair Display',serif;font-style:italic;font-weight:600;font-size:20px;color:var(--gold-light);letter-spacing:.3px}
+.logo span{color:var(--text)}
+.nav-cta{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:9px 16px;border-radius:999px;
+  background:linear-gradient(135deg,var(--gold) 0%,var(--gold-light) 100%);
+  color:#15110a;font-weight:600;font-size:13.5px;
+  transition:transform .3s var(--ease), box-shadow .3s var(--ease);
+  box-shadow:0 6px 20px rgba(196,164,78,0.25);
+}
+.nav-cta:hover{transform:translateY(-1px);box-shadow:0 10px 26px rgba(196,164,78,0.35)}
 
-    .hero h1 {
-      font-family:var(--serif);
-      font-size:clamp(1.75rem,6.5vw,2.6rem);
-      font-weight:600; line-height:1.12;
-      margin-bottom:14px;
-      position:relative;
-    }
-    .hero h1 em { font-style:italic; color:var(--gold-l); }
+/* ===== HERO ===== */
+.hero{
+  position:relative;
+  padding:96px 0 46px;
+  overflow:hidden;
+}
+.hero-inner{position:relative;z-index:3;text-align:center;max-width:780px;margin:0 auto}
+.orb{
+  position:absolute;
+  top:40%;left:50%;transform:translate(-50%,-50%);
+  width:520px;height:520px;border-radius:50%;
+  background:radial-gradient(circle at 50% 50%, rgba(226,204,138,0.22) 0%, rgba(196,164,78,0.08) 30%, transparent 65%);
+  filter:blur(8px);
+  animation:float 9s ease-in-out infinite;
+  z-index:1;pointer-events:none;
+}
+@keyframes float{
+  0%,100%{transform:translate(-50%,-50%) scale(1)}
+  50%{transform:translate(-50%,-54%) scale(1.06)}
+}
+.badge{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:7px 14px;border-radius:999px;
+  background:rgba(95,168,95,0.08);
+  border:1px solid rgba(95,168,95,0.28);
+  color:#b3d9b3;font-size:12.5px;font-weight:500;letter-spacing:.2px;
+  margin-bottom:22px;
+}
+.badge .dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 10px rgba(95,168,95,0.7);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
 
-    .hero-p {
-      font-size:0.92rem; line-height:1.6;
-      color:var(--text2);
-      margin-bottom:24px;
-      max-width:360px; margin-left:auto; margin-right:auto;
-    }
+.h1{
+  font-size:clamp(32px,7.2vw,56px);
+  line-height:1.08;
+  letter-spacing:-0.015em;
+  margin-bottom:16px;
+  color:var(--text);
+}
+.h1 em{display:block;color:var(--gold-light);font-size:.9em;margin-top:4px}
+.sub{
+  font-size:clamp(15px,3.8vw,18px);
+  color:var(--text2);
+  max-width:560px;margin:0 auto 26px;
+  line-height:1.55;
+}
+.hero-cta-wrap{display:flex;flex-direction:column;align-items:center;gap:10px;margin-bottom:22px}
+.btn-primary{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:16px 28px;border-radius:14px;
+  background:linear-gradient(135deg,var(--gold) 0%,var(--gold-light) 60%,var(--gold) 100%);
+  color:#15110a;font-size:16px;font-weight:700;letter-spacing:.2px;
+  box-shadow:var(--shadow-gold);
+  transition:transform .3s var(--ease), box-shadow .3s var(--ease), filter .3s var(--ease);
+  min-height:56px;width:100%;max-width:360px;
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 22px 70px rgba(196,164,78,0.32);filter:brightness(1.05)}
+.btn-primary .strike{text-decoration:line-through;opacity:.55;font-weight:500;margin-right:4px;font-size:14px}
+.btn-primary .arrow{transition:transform .3s var(--ease)}
+.btn-primary:hover .arrow{transform:translateX(4px)}
+.micro{color:var(--text3);font-size:12.5px;letter-spacing:.3px}
+.micro b{color:var(--text2);font-weight:500}
 
-    /* ── PHONE MOCKUP ── */
-    .phone-wrap {
-      width:200px; margin:0 auto 28px;
-      position:relative;
-    }
-    .phone {
-      width:200px; height:400px;
-      border-radius:28px;
-      border:2px solid rgba(255,255,255,0.1);
-      background:linear-gradient(180deg, #0e1025 0%, #0a0c1a 100%);
-      overflow:hidden;
-      box-shadow:
-        0 20px 60px rgba(0,0,0,0.5),
-        0 0 40px var(--gold-glow),
-        inset 0 1px 0 rgba(255,255,255,0.05);
-      position:relative;
-    }
-    .phone-notch {
-      width:80px; height:22px;
-      background:var(--bg);
-      border-radius:0 0 14px 14px;
-      margin:0 auto;
-      position:relative; z-index:2;
-    }
-    .phone-screen {
-      padding:12px 16px;
-      height:calc(100% - 22px);
-      display:flex; flex-direction:column;
-    }
-    .ph-greeting {
-      font-size:0.6rem;
-      color:var(--text3);
-      margin-bottom:4px;
-    }
-    .ph-title {
-      font-family:var(--serif);
-      font-size:0.85rem;
-      font-weight:500;
-      margin-bottom:12px;
-      color:var(--text);
-    }
-    .ph-title em { color:var(--gold-l); font-style:italic; }
-    .ph-mood {
-      font-size:0.55rem; color:var(--text3);
-      margin-bottom:8px;
-      text-transform:uppercase;
-      letter-spacing:0.1em;
-    }
-    .ph-moods {
-      display:flex; gap:6px;
-      margin-bottom:16px;
-    }
-    .ph-mood-btn {
-      flex:1;
-      padding:8px 4px;
-      border-radius:10px;
-      border:1px solid var(--border);
-      background:var(--surface);
-      text-align:center;
-      font-size:0.55rem;
-      color:var(--text2);
-      transition:all 0.3s;
-    }
-    .ph-mood-btn.active {
-      border-color:var(--gold);
-      background:var(--gold-d);
-      color:var(--gold-l);
-    }
-    .ph-mood-btn .emoji { font-size:1rem; display:block; margin-bottom:2px; }
-    .ph-card {
-      flex:1;
-      background:linear-gradient(135deg, rgba(196,164,78,0.08) 0%, rgba(196,164,78,0.02) 100%);
-      border:1px solid rgba(196,164,78,0.12);
-      border-radius:14px;
-      padding:14px;
-      display:flex; flex-direction:column;
-    }
-    .ph-card-label {
-      font-size:0.5rem;
-      color:var(--gold);
-      text-transform:uppercase;
-      letter-spacing:0.12em;
-      margin-bottom:6px;
-    }
-    .ph-card-title {
-      font-family:var(--serif);
-      font-size:0.72rem;
-      font-weight:500;
-      margin-bottom:4px;
-    }
-    .ph-card-desc {
-      font-size:0.5rem;
-      color:var(--text3);
-      flex:1;
-    }
-    .ph-card-play {
-      margin-top:10px;
-      width:100%; padding:8px;
-      border-radius:8px;
-      background:var(--gold);
-      color:var(--bg);
-      font-size:0.55rem;
-      font-weight:600;
-      border:none;
-      text-align:center;
-      letter-spacing:0.05em;
-    }
-    .phone-glow {
-      position:absolute;
-      top:50%; left:50%; transform:translate(-50%,-50%);
-      width:300px; height:300px;
-      background:radial-gradient(circle, rgba(196,164,78,0.1) 0%, transparent 60%);
-      pointer-events:none;
-      z-index:-1;
-    }
+.hero-proof{
+  display:inline-flex;flex-direction:column;align-items:center;gap:6px;
+  padding:14px 18px;border-radius:14px;
+  background:rgba(255,255,255,0.025);
+  border:1px solid var(--border);
+  max-width:420px;margin:0 auto;
+}
+.stars-row{color:var(--gold-light);font-size:14px;letter-spacing:2px}
+.quote-mini{color:var(--text2);font-size:13.5px;font-style:italic;line-height:1.45}
+.quote-mini b{color:var(--text);font-style:normal;font-weight:500}
 
-    /* ── CTA BUTTONS ── */
-    .cta-group {
-      display:flex; flex-direction:column;
-      gap:10px; max-width:340px;
-      margin:0 auto 16px;
-    }
-    .cta-primary {
-      display:block; width:100%;
-      padding:15px 24px;
-      background:var(--gold);
-      color:var(--bg);
-      font-family:var(--sans);
-      font-size:0.92rem; font-weight:600;
-      border-radius:50px;
-      text-decoration:none; text-align:center;
-      box-shadow:0 4px 20px rgba(196,164,78,0.3);
-      transition:all 0.3s;
-    }
-    .cta-primary:hover {
-      transform:translateY(-2px);
-      box-shadow:0 8px 30px rgba(196,164,78,0.4);
-    }
-    .cta-secondary {
-      display:block; width:100%;
-      padding:14px 24px;
-      background:transparent;
-      border:1px solid var(--border);
-      color:var(--text);
-      font-family:var(--sans);
-      font-size:0.85rem; font-weight:400;
-      border-radius:50px;
-      text-decoration:none; text-align:center;
-      transition:all 0.3s;
-    }
-    .cta-secondary:hover {
-      border-color:rgba(255,255,255,0.15);
-      background:var(--surface);
-    }
-    .cta-note {
-      font-size:0.68rem; color:var(--text3);
-      text-align:center;
-    }
+.scroll-ind{
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+  margin-top:34px;color:var(--text3);font-size:11.5px;letter-spacing:2px;text-transform:uppercase;
+  animation:bob 2.4s ease-in-out infinite;
+}
+.scroll-ind svg{width:16px;height:16px}
+@keyframes bob{0%,100%{transform:translateY(0);opacity:.55}50%{transform:translateY(6px);opacity:1}}
 
-    /* ── SOCIAL PROOF BAR ── */
-    .proof-bar {
-      display:flex; justify-content:center;
-      gap:24px; padding:20px;
-      border-top:1px solid var(--border);
-      border-bottom:1px solid var(--border);
-      max-width:440px; margin:0 auto;
-    }
-    .proof-item { text-align:center; }
-    .proof-num {
-      font-family:var(--serif);
-      font-size:1.4rem; font-weight:600;
-      color:var(--gold-l);
-    }
-    .proof-label {
-      font-size:0.6rem;
-      color:var(--text3);
-      text-transform:uppercase;
-      letter-spacing:0.08em;
-    }
+/* ===== PROOF BAR ===== */
+.proofbar{
+  border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+  background:rgba(255,255,255,0.015);
+  padding:20px 0;
+}
+.proofbar-inner{display:flex;align-items:center;justify-content:center;gap:clamp(18px,6vw,80px);flex-wrap:wrap;text-align:center}
+.proof-item{display:flex;flex-direction:column;align-items:center;gap:2px}
+.proof-n{font-family:'Playfair Display',serif;font-size:clamp(22px,5vw,30px);color:var(--gold-light);font-weight:600}
+.proof-l{font-size:11.5px;color:var(--text3);text-transform:uppercase;letter-spacing:2px}
 
-    /* ── SECTION STYLES ── */
-    .sec {
-      padding:56px 20px;
-      max-width:440px;
-      margin:0 auto;
-    }
-    .sec-label {
-      font-size:0.62rem; font-weight:600;
-      letter-spacing:0.2em;
-      text-transform:uppercase;
-      color:var(--gold);
-      text-align:center;
-      margin-bottom:10px;
-    }
-    .sec-title {
-      font-family:var(--serif);
-      font-size:clamp(1.4rem,4.5vw,1.9rem);
-      font-weight:600; line-height:1.2;
-      text-align:center;
-      margin-bottom:24px;
-    }
-    .sec-title em { font-style:italic; color:var(--gold-l); }
+/* ===== SECTIONS ===== */
+section{padding:80px 0;position:relative}
+section.alt{background:var(--bg2)}
+.eyebrow{
+  display:inline-block;font-size:11.5px;letter-spacing:3px;text-transform:uppercase;
+  color:var(--gold);margin-bottom:12px;font-weight:500;
+}
+.h2{
+  font-size:clamp(28px,5.5vw,44px);
+  line-height:1.12;margin-bottom:18px;
+}
+.h2 em{color:var(--gold-light)}
+.lead{font-size:clamp(15px,3.6vw,18px);color:var(--text2);max-width:640px;margin:0 auto;line-height:1.6}
+.section-head{text-align:center;margin-bottom:48px;max-width:720px;margin-left:auto;margin-right:auto}
 
-    .divider {
-      height:1px; max-width:440px; margin:0 auto;
-      background:linear-gradient(90deg, transparent, var(--border), transparent);
-    }
+/* ===== DORES ===== */
+.pain-grid{display:grid;grid-template-columns:1fr;gap:14px;max-width:700px;margin:0 auto}
+.pain-card{
+  display:flex;align-items:flex-start;gap:14px;
+  padding:20px 22px;border-radius:var(--radius);
+  background:rgba(196,74,74,0.03);
+  border:1px solid rgba(196,74,74,0.14);
+  transition:transform .4s var(--ease), border-color .4s var(--ease), background .4s var(--ease);
+}
+.pain-card:hover{transform:translateX(4px);border-color:rgba(196,74,74,0.28);background:rgba(196,74,74,0.06)}
+.pain-icon{
+  flex-shrink:0;width:36px;height:36px;border-radius:50%;
+  background:rgba(196,74,74,0.14);color:var(--red);
+  display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:600;
+}
+.pain-text{font-size:16px;line-height:1.5;color:var(--text);padding-top:4px}
+.pivot{
+  text-align:center;margin-top:54px;padding:0 20px;
+  font-family:'Playfair Display',serif;font-style:italic;font-weight:600;
+  font-size:clamp(22px,5vw,32px);color:var(--gold-light);line-height:1.3;
+  max-width:720px;margin-left:auto;margin-right:auto;
+}
+.pivot::before,.pivot::after{content:"";display:block;width:40px;height:1px;background:var(--border-strong);margin:22px auto}
 
-    /* ── PAIN SECTION ── */
-    .pain-grid {
-      display:grid; gap:10px;
-    }
-    .pain-item {
-      display:flex; gap:12px; align-items:flex-start;
-      padding:16px;
-      border-radius:14px;
-      background:var(--surface);
-      border:1px solid var(--border);
-    }
-    .pain-x {
-      width:22px; height:22px; border-radius:50%;
-      background:rgba(196,78,78,0.1);
-      border:1px solid rgba(196,78,78,0.2);
-      display:flex; align-items:center; justify-content:center;
-      flex-shrink:0; margin-top:1px;
-      font-size:0.55rem; color:var(--red);
-    }
-    .pain-item p {
-      font-size:0.85rem; color:var(--text2);
-      line-height:1.5;
-    }
-    .pain-item strong { color:var(--text); font-weight:500; }
-    .pain-bridge {
-      margin-top:24px; padding:24px;
-      text-align:center;
-      border-radius:16px;
-      background:linear-gradient(135deg, var(--gold-d) 0%, transparent 100%);
-      border:1px solid rgba(196,164,78,0.12);
-    }
-    .pain-bridge p {
-      font-family:var(--serif);
-      font-size:1.05rem;
-      font-style:italic;
-      line-height:1.6;
-    }
-    .pain-bridge strong { color:var(--gold-l); }
+/* ===== COME FUNZIONA ===== */
+.steps{display:grid;grid-template-columns:1fr;gap:20px;max-width:820px;margin:0 auto}
+.step{
+  display:flex;gap:18px;align-items:flex-start;
+  padding:24px;border-radius:var(--radius);
+  background:rgba(255,255,255,0.02);border:1px solid var(--border);
+  transition:transform .4s var(--ease), border-color .4s var(--ease);
+}
+.step:hover{transform:translateX(4px);border-color:var(--border-strong)}
+.step-num{
+  flex-shrink:0;width:44px;height:44px;border-radius:50%;
+  background:linear-gradient(135deg,var(--gold) 0%,var(--gold-light) 100%);
+  color:#15110a;font-family:'Playfair Display',serif;font-weight:700;font-size:19px;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 18px rgba(196,164,78,0.28);
+}
+.step-title{font-family:'Playfair Display',serif;font-weight:600;font-size:20px;color:var(--text);margin-bottom:4px}
+.step-desc{color:var(--text2);font-size:15px;line-height:1.55}
+.step-desc b{color:var(--text);font-weight:500}
 
-    /* ── HOW IT WORKS ── */
-    .steps { display:grid; gap:10px; }
-    .step {
-      display:flex; gap:14px; align-items:flex-start;
-      padding:18px;
-      border-radius:14px;
-      background:var(--surface);
-      border:1px solid var(--border);
-    }
-    .step-n {
-      width:32px; height:32px; border-radius:50%;
-      background:var(--gold-d);
-      border:1px solid rgba(196,164,78,0.2);
-      display:flex; align-items:center; justify-content:center;
-      flex-shrink:0;
-      font-family:var(--serif);
-      font-size:0.85rem; font-weight:600;
-      color:var(--gold);
-    }
-    .step h3 {
-      font-size:0.88rem; font-weight:500;
-      margin-bottom:3px;
-    }
-    .step p {
-      font-size:0.78rem; color:var(--text2);
-      line-height:1.5;
-    }
+/* ===== MOCKUP ===== */
+.mockup-wrap{display:flex;justify-content:center;margin-top:60px}
+.phone{
+  position:relative;width:260px;height:530px;
+  background:linear-gradient(180deg,#18141c 0%,#0e0a10 100%);
+  border-radius:42px;
+  padding:12px;
+  border:1px solid rgba(196,164,78,0.22);
+  box-shadow:0 30px 80px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.06);
+  animation:float 8s ease-in-out infinite;
+}
+.phone::before{content:"";position:absolute;top:14px;left:50%;transform:translateX(-50%);width:80px;height:18px;background:#000;border-radius:12px;z-index:3}
+.phone-screen{
+  width:100%;height:100%;border-radius:30px;
+  background:linear-gradient(180deg,#0a0812 0%,#130f20 50%,#0a0812 100%);
+  overflow:hidden;position:relative;padding:42px 18px 18px;
+  display:flex;flex-direction:column;
+}
+.ps-top{color:var(--text3);font-size:11px;text-align:center;margin-bottom:8px;letter-spacing:1.5px;text-transform:uppercase}
+.ps-greet{font-family:'Playfair Display',serif;font-style:italic;color:var(--gold-light);font-size:17px;text-align:center;line-height:1.3;margin-bottom:14px}
+.ps-card{
+  background:rgba(196,164,78,0.07);border:1px solid var(--border-strong);border-radius:14px;padding:14px;margin-bottom:10px;
+}
+.ps-label{font-size:10px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:6px}
+.ps-title{font-family:'Playfair Display',serif;color:var(--text);font-size:14px;font-weight:600;margin-bottom:4px}
+.ps-desc{color:var(--text2);font-size:11.5px;line-height:1.4}
+.ps-play{
+  display:flex;align-items:center;gap:8px;margin-top:10px;padding:8px 10px;
+  background:rgba(226,204,138,0.1);border-radius:10px;
+}
+.ps-play-ico{width:22px;height:22px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;color:#15110a;font-size:9px}
+.ps-play-text{color:var(--text);font-size:11px;font-weight:500}
+.ps-mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:auto}
+.ps-mini{background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:10px;padding:10px;text-align:center}
+.ps-mini-n{font-family:'Playfair Display',serif;color:var(--gold-light);font-size:16px;font-weight:600}
+.ps-mini-l{color:var(--text3);font-size:9px;letter-spacing:1px;text-transform:uppercase;margin-top:2px}
 
-    /* ── TRANSFORMATION ── */
-    .transform-grid {
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:12px;
-    }
-    .t-col { border-radius:14px; padding:20px 16px; }
-    .t-col.before {
-      background:rgba(196,78,78,0.04);
-      border:1px solid rgba(196,78,78,0.1);
-    }
-    .t-col.after {
-      background:rgba(95,168,95,0.04);
-      border:1px solid rgba(95,168,95,0.1);
-    }
-    .t-col-label {
-      font-size:0.58rem; font-weight:600;
-      letter-spacing:0.15em;
-      text-transform:uppercase;
-      margin-bottom:12px;
-    }
-    .t-col.before .t-col-label { color:var(--red); }
-    .t-col.after .t-col-label { color:var(--green); }
-    .t-col li {
-      list-style:none;
-      font-size:0.78rem;
-      color:var(--text2);
-      padding:3px 0;
-      display:flex; align-items:center; gap:6px;
-    }
-    .t-col li .dot {
-      width:4px; height:4px; border-radius:50%;
-      flex-shrink:0;
-    }
-    .t-col.before .dot { background:var(--red); }
-    .t-col.after .dot { background:var(--green); }
+/* ===== TRASFORMAZIONE ===== */
+.transform-grid{display:grid;grid-template-columns:1fr;gap:18px;max-width:860px;margin:0 auto}
+.tcol{
+  padding:28px 26px;border-radius:var(--radius);
+  border:1px solid var(--border);
+}
+.tcol.before{background:rgba(196,74,74,0.03);border-color:rgba(196,74,74,0.16)}
+.tcol.after{background:rgba(95,168,95,0.04);border-color:rgba(95,168,95,0.22)}
+.tcol h3{font-size:20px;margin-bottom:18px;font-family:'Playfair Display',serif}
+.tcol.before h3{color:#d88d8d}
+.tcol.after h3{color:#9bc89b}
+.tcol ul{list-style:none;display:flex;flex-direction:column;gap:12px}
+.tcol li{display:flex;gap:10px;align-items:flex-start;font-size:15px;color:var(--text);line-height:1.5}
+.tcol li::before{flex-shrink:0;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;margin-top:1px}
+.tcol.before li::before{content:"✕";background:rgba(196,74,74,0.16);color:var(--red)}
+.tcol.after li::before{content:"✓";background:rgba(95,168,95,0.18);color:var(--green)}
 
-    /* ── TESTIMONIALS ── */
-    .reviews { display:grid; gap:12px; }
-    .review {
-      padding:20px;
-      border-radius:14px;
-      background:var(--surface);
-      border:1px solid var(--border);
-    }
-    .review-text {
-      font-family:var(--serif);
-      font-size:0.88rem;
-      font-style:italic;
-      line-height:1.65;
-      color:var(--text2);
-      margin-bottom:14px;
-    }
-    .review-author {
-      display:flex; align-items:center; gap:10px;
-    }
-    .review-avatar {
-      width:36px; height:36px; border-radius:50%;
-      object-fit:cover;
-      border:1px solid rgba(196,164,78,0.15);
-    }
-    .review-name {
-      font-size:0.78rem; font-weight:500;
-    }
-    .review-meta {
-      font-size:0.62rem; color:var(--text3);
-    }
-    .review-meta .stars { color:var(--gold); }
+/* ===== TESTIMONIALS ===== */
+.tests{display:grid;grid-template-columns:1fr;gap:18px;max-width:1000px;margin:0 auto}
+.test{
+  padding:26px;border-radius:var(--radius);
+  background:rgba(255,255,255,0.025);border:1px solid var(--border);
+  transition:transform .4s var(--ease), border-color .4s var(--ease);
+}
+.test:hover{transform:translateY(-3px);border-color:var(--border-strong)}
+.test-stars{color:var(--gold-light);font-size:13px;letter-spacing:2px;margin-bottom:10px}
+.test-text{color:var(--text);font-size:15.5px;line-height:1.6;margin-bottom:18px;font-style:italic}
+.test-author{display:flex;align-items:center;gap:12px}
+.test-avatar{
+  width:44px;height:44px;border-radius:50%;
+  background:linear-gradient(135deg,var(--gold-deep),var(--gold-light));
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Playfair Display',serif;font-weight:700;color:#15110a;font-size:16px;
+  flex-shrink:0;
+}
+.test-info{display:flex;flex-direction:column}
+.test-name{color:var(--text);font-weight:600;font-size:14px}
+.test-city{color:var(--text3);font-size:12.5px;letter-spacing:.3px}
 
-    /* ── PRICING ── */
-    .pricing-sec {
-      background:var(--bg2);
-      border-top:1px solid var(--border);
-      border-bottom:1px solid var(--border);
-    }
-    .pricing-cards {
-      display:grid; gap:14px;
-    }
-    .p-card {
-      border-radius:18px;
-      padding:28px 22px;
-      text-align:center;
-      position:relative;
-      overflow:hidden;
-    }
-    .p-card.free {
-      background:var(--surface);
-      border:1px solid var(--border);
-    }
-    .p-card.full {
-      background:linear-gradient(135deg, rgba(196,164,78,0.08) 0%, rgba(196,164,78,0.02) 100%);
-      border:1px solid rgba(196,164,78,0.18);
-    }
-    .p-card.full::before {
-      content:'';
-      position:absolute; top:-1px; left:20%; right:20%;
-      height:2px;
-      background:linear-gradient(90deg, transparent, var(--gold), transparent);
-    }
-    .p-tag {
-      display:inline-block;
-      padding:4px 12px;
-      border-radius:50px;
-      font-size:0.58rem; font-weight:600;
-      letter-spacing:0.1em;
-      text-transform:uppercase;
-      margin-bottom:12px;
-    }
-    .p-card.free .p-tag {
-      background:rgba(95,168,95,0.1);
-      color:var(--green);
-      border:1px solid rgba(95,168,95,0.2);
-    }
-    .p-card.full .p-tag {
-      background:var(--gold-d);
-      color:var(--gold-l);
-      border:1px solid rgba(196,164,78,0.2);
-    }
-    .p-price {
-      font-family:var(--serif);
-      font-size:2.2rem; font-weight:700;
-      line-height:1; margin-bottom:4px;
-    }
-    .p-price .small {
-      font-size:0.9rem;
-      vertical-align:super;
-      color:var(--gold);
-    }
-    .p-desc {
-      font-size:0.78rem;
-      color:var(--text3);
-      margin-bottom:18px;
-    }
-    .p-features {
-      text-align:left; margin-bottom:20px;
-    }
-    .p-feat {
-      display:flex; align-items:center; gap:8px;
-      padding:5px 0;
-      font-size:0.78rem; color:var(--text2);
-    }
-    .p-feat .ck {
-      width:16px; height:16px; border-radius:50%;
-      display:flex; align-items:center; justify-content:center;
-      flex-shrink:0;
-    }
-    .p-card.free .ck {
-      background:rgba(95,168,95,0.1);
-      border:1px solid rgba(95,168,95,0.15);
-    }
-    .p-card.full .ck {
-      background:var(--gold-d);
-      border:1px solid rgba(196,164,78,0.15);
-    }
-    .p-feat .ck svg {
-      width:8px; height:8px;
-      stroke-width:3; fill:none;
-    }
-    .p-card.free .ck svg { stroke:var(--green); }
-    .p-card.full .ck svg { stroke:var(--gold); }
-    .p-btn {
-      display:block; width:100%;
-      padding:14px;
-      border-radius:50px;
-      font-family:var(--sans);
-      font-size:0.88rem; font-weight:600;
-      text-decoration:none; text-align:center;
-      transition:all 0.3s;
-    }
-    .p-card.free .p-btn {
-      background:var(--green);
-      color:white;
-    }
-    .p-card.full .p-btn {
-      background:var(--gold);
-      color:var(--bg);
-      box-shadow:0 4px 20px rgba(196,164,78,0.25);
-    }
+/* ===== PREZZO ===== */
+.price-card{
+  max-width:580px;margin:0 auto;
+  padding:38px 32px;border-radius:var(--radius);
+  background:linear-gradient(180deg, rgba(196,164,78,0.05) 0%, rgba(196,164,78,0.02) 100%);
+  border:1px solid var(--border-strong);
+  box-shadow:0 30px 90px rgba(0,0,0,0.4);
+  position:relative;overflow:hidden;
+}
+.price-card::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(500px circle at 50% 0%, rgba(226,204,138,0.08), transparent 60%);
+  pointer-events:none;
+}
+.price-card > *{position:relative;z-index:2}
+.price-tag{
+  display:inline-block;padding:4px 12px;border-radius:999px;
+  background:rgba(196,164,78,0.12);color:var(--gold-light);
+  font-size:11.5px;letter-spacing:2px;text-transform:uppercase;font-weight:500;
+  margin-bottom:14px;
+}
+.price-title{font-size:26px;margin-bottom:6px}
+.price-sub{color:var(--text2);font-size:14.5px;margin-bottom:24px}
+.includes{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:26px;text-align:left}
+.includes li{display:flex;gap:10px;align-items:flex-start;font-size:15px;color:var(--text);line-height:1.45}
+.includes li::before{content:"✓";flex-shrink:0;width:22px;height:22px;border-radius:50%;background:rgba(95,168,95,0.18);color:var(--green);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;margin-top:1px}
+.price-box{
+  text-align:center;padding:22px 0 10px;border-top:1px solid var(--border);margin-bottom:18px;
+}
+.price-old{color:var(--text3);font-size:17px;text-decoration:line-through;margin-bottom:4px}
+.price-now{font-family:'Playfair Display',serif;font-size:56px;font-weight:700;color:var(--gold-light);line-height:1;letter-spacing:-.02em}
+.price-now sup{font-size:22px;top:-24px;color:var(--gold)}
+.price-note{color:var(--text2);font-size:13px;margin-top:8px}
 
-    /* ── GUARANTEE ── */
-    .guarantee {
-      max-width:400px; margin:0 auto;
-      padding:28px 22px;
-      border-radius:16px;
-      background:var(--surface);
-      border:1px solid var(--border);
-      text-align:center;
-    }
-    .guarantee h3 {
-      font-family:var(--serif);
-      font-size:1.15rem; font-weight:600;
-      margin:10px 0;
-    }
-    .guarantee p {
-      font-size:0.82rem; color:var(--text2);
-      line-height:1.6;
-    }
+/* ===== GARANZIA ===== */
+.guarantee{
+  text-align:center;max-width:720px;margin:0 auto;
+  padding:44px 30px;border-radius:var(--radius);
+  background:linear-gradient(180deg, rgba(95,168,95,0.04), transparent 100%);
+  border:1px solid rgba(95,168,95,0.2);
+}
+.shield{
+  width:60px;height:60px;margin:0 auto 18px;
+  display:flex;align-items:center;justify-content:center;
+  border-radius:50%;background:rgba(95,168,95,0.12);
+  border:1px solid rgba(95,168,95,0.28);color:var(--green);
+}
+.guarantee h3{font-size:28px;margin-bottom:12px;color:var(--text)}
+.guarantee p{color:var(--text2);font-size:16px;line-height:1.6;max-width:540px;margin:0 auto}
 
-    /* ── FAQ ── */
-    .faq-list { display:grid; gap:8px; }
-    .faq-item {
-      border:1px solid var(--border);
-      border-radius:12px;
-      background:var(--surface);
-      overflow:hidden; cursor:pointer;
-    }
-    .faq-q {
-      padding:15px 18px;
-      display:flex; justify-content:space-between;
-      align-items:center;
-      font-size:0.82rem; font-weight:400;
-    }
-    .faq-q .tog {
-      font-size:1rem; color:var(--text3);
-      transition:transform 0.3s; flex-shrink:0; margin-left:10px;
-    }
-    .faq-a {
-      max-height:0; overflow:hidden;
-      transition:max-height 0.35s;
-    }
-    .faq-a-inner {
-      padding:0 18px 15px;
-      font-size:0.78rem; color:var(--text2);
-      line-height:1.6;
-    }
-    .faq-item.open .faq-a { max-height:250px; }
-    .faq-item.open .tog { transform:rotate(45deg); }
+/* ===== FAQ ===== */
+.faq-list{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
+.faq-item{
+  background:rgba(255,255,255,0.02);border:1px solid var(--border);border-radius:var(--radius-sm);
+  overflow:hidden;transition:border-color .3s var(--ease);
+}
+.faq-item[open]{border-color:var(--border-strong)}
+.faq-item summary{
+  cursor:pointer;padding:18px 22px;list-style:none;
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  font-weight:500;font-size:15.5px;color:var(--text);
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{
+  content:"+";font-size:22px;color:var(--gold);font-weight:300;
+  transition:transform .3s var(--ease);flex-shrink:0;
+}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-body{padding:0 22px 20px;color:var(--text2);font-size:14.5px;line-height:1.65}
 
-    /* ── FINAL CTA ── */
-    .final-cta {
-      text-align:center;
-      padding:56px 20px 40px;
-      max-width:440px; margin:0 auto;
-      position:relative;
-    }
-    .final-cta::before {
-      content:'';
-      position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
-      width:400px; height:400px;
-      background:radial-gradient(circle, var(--gold-glow) 0%, transparent 60%);
-      pointer-events:none;
-    }
+/* ===== CTA FINAL ===== */
+.cta-final{
+  text-align:center;max-width:760px;margin:0 auto;padding:0 20px;
+}
+.cta-final .h2{margin-bottom:14px}
+.cta-final .lead{margin-bottom:30px}
+.cta-final .btn-primary{max-width:420px}
 
-    /* ── FOOTER ── */
-    footer {
-      padding:30px 20px;
-      text-align:center;
-      border-top:1px solid var(--border);
-      max-width:440px; margin:0 auto;
-    }
-    footer p { font-size:0.65rem; color:var(--text3); }
-    footer a { color:var(--text3); text-decoration:none; }
+/* ===== FOOTER ===== */
+.footer{padding:40px 0 110px;border-top:1px solid var(--border);background:var(--bg2);text-align:center}
+.footer-logo{font-family:'Playfair Display',serif;font-style:italic;color:var(--gold-light);margin-bottom:12px;font-size:18px}
+.footer-links{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;margin-bottom:16px}
+.footer-links a{color:var(--text3);font-size:13px;transition:color .3s var(--ease)}
+.footer-links a:hover{color:var(--gold-light)}
+.footer-copy{color:var(--text3);font-size:12px;letter-spacing:.3px}
 
-    /* ── STICKY BOTTOM ── */
-    .sticky-b {
-      position:fixed; bottom:0; left:0; right:0; z-index:99;
-      background:rgba(6,6,10,0.92);
-      backdrop-filter:blur(20px);
-      -webkit-backdrop-filter:blur(20px);
-      border-top:1px solid var(--border);
-      padding:10px 16px;
-      display:flex; align-items:center;
-      justify-content:space-between; gap:10px;
-      transform:translateY(100%);
-      transition:transform 0.4s;
-    }
-    .sticky-b.show { transform:translateY(0); }
-    .sb-text { flex:1; }
-    .sb-title { font-size:0.78rem; font-weight:500; }
-    .sb-sub { font-size:0.62rem; color:var(--text3); }
-    .sb-btn {
-      padding:9px 18px; border-radius:50px;
-      background:var(--gold); color:var(--bg);
-      font-size:0.78rem; font-weight:600;
-      text-decoration:none; white-space:nowrap;
-    }
+/* ===== STICKY BAR ===== */
+.sticky{
+  position:fixed;bottom:0;left:0;right:0;z-index:90;
+  backdrop-filter:blur(20px) saturate(160%);
+  -webkit-backdrop-filter:blur(20px) saturate(160%);
+  background:rgba(6,6,10,0.88);
+  border-top:1px solid var(--border-strong);
+  padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+  transform:translateY(100%);
+  transition:transform .5s var(--ease);
+}
+.sticky.show{transform:translateY(0)}
+.sticky-inner{display:flex;align-items:center;gap:12px;max-width:640px;margin:0 auto}
+.sticky-label{flex:1;display:flex;flex-direction:column;line-height:1.2}
+.sticky-price{font-family:'Playfair Display',serif;color:var(--gold-light);font-weight:600;font-size:18px}
+.sticky-price .strike{color:var(--text3);font-size:13px;text-decoration:line-through;font-weight:400;margin-right:6px;font-family:'Outfit',sans-serif}
+.sticky-desc{color:var(--text3);font-size:11px;letter-spacing:.3px}
+.sticky-btn{
+  padding:12px 18px;border-radius:12px;
+  background:linear-gradient(135deg,var(--gold) 0%,var(--gold-light) 100%);
+  color:#15110a;font-weight:700;font-size:14px;white-space:nowrap;
+  box-shadow:0 8px 24px rgba(196,164,78,0.28);
+  transition:transform .3s var(--ease);
+}
+.sticky-btn:hover{transform:translateY(-1px)}
 
-    /* ── ANIMATIONS ── */
-    .fade { opacity:0; transform:translateY(16px); transition:opacity 0.6s, transform 0.6s; }
-    .fade.vis { opacity:1; transform:translateY(0); }
+/* ===== FADE-IN ===== */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .8s var(--ease), transform .8s var(--ease)}
+.reveal.visible{opacity:1;transform:translateY(0)}
 
-    /* ── PHONE ANIMATION ── */
-    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
-    .phone-wrap { animation:float 5s ease-in-out infinite; }
-
-    /* mood cycling */
-    @keyframes moodCycle {
-      0%,25% { opacity:1; }
-      30%,95% { opacity:1; }
-      100% { opacity:1; }
-    }
-
-    body { padding-bottom:60px; }
-
-    @media(max-width:380px) {
-      .hero h1 { font-size:1.6rem; }
-      .phone { width:180px; height:360px; }
-      .phone-wrap { width:180px; }
-      .transform-grid { grid-template-columns:1fr; }
-    }
-  </style>
+/* ===== MEDIA QUERIES ===== */
+@media(min-width:720px){
+  .pain-grid{grid-template-columns:1fr 1fr 1fr;max-width:none}
+  .steps{grid-template-columns:1fr 1fr 1fr}
+  .step{flex-direction:column;text-align:left}
+  .transform-grid{grid-template-columns:1fr 1fr}
+  .tests{grid-template-columns:1fr 1fr 1fr}
+}
+@media(max-width:380px){
+  .hero{padding:88px 0 36px}
+  .h1{font-size:30px}
+  .wrap{padding:0 18px}
+  .price-card{padding:30px 22px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01s!important;transition-duration:.01s!important}
+}
+</style>
 </head>
 <body>
 
-  <nav>
-    <div class="nav-brand"><span class="nav-dot"></span> Risveglio Sereno</div>
-    <a href="https://pay.hotmart.com/H105239735W?off=8skatnnb&bid=1776294335191" class="nav-cta" onclick="fbq('track','InitiateCheckout')">Inizia ora</a>
-  </nav>
+<div class="stars" id="stars"></div>
 
-  <!-- ═══ HERO ═══ -->
-  <section class="hero">
-    <div class="hero-badge"><span class="pulse"></span> Garanzia 30 giorni soddisfatti o rimborsati</div>
-    <h1>La tua mente merita <em>pace.</em></h1>
-    <p class="hero-p">
-      Il percorso di 90 giorni che trasforma l'ansia in calma,
-      personalizzato per te. 5 minuti al giorno bastano.
-    </p>
-
-    <!-- PHONE MOCKUP -->
-    <div class="phone-wrap">
-      <div class="phone-glow"></div>
-      <div class="phone">
-        <div class="phone-notch"></div>
-        <div class="phone-screen">
-          <div class="ph-greeting">Buongiorno ✨</div>
-          <div class="ph-title">Come ti senti <em>oggi?</em></div>
-          <div class="ph-mood">scegli il tuo stato</div>
-          <div class="ph-moods" id="moods">
-            <div class="ph-mood-btn active"><span class="emoji">😰</span>Ansiosa</div>
-            <div class="ph-mood-btn"><span class="emoji">😴</span>Stanca</div>
-            <div class="ph-mood-btn"><span class="emoji">😤</span>Agitata</div>
-          </div>
-          <div class="ph-card">
-            <div class="ph-card-label">La tua meditazione</div>
-            <div class="ph-card-title" id="medTitle">Respiro della Calma</div>
-            <div class="ph-card-desc" id="medDesc">7 min · Creata per il tuo stato emotivo di oggi</div>
-            <div class="ph-card-play">▶ Inizia ora</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="cta-group">
-      <a href="https://pay.hotmart.com/H105239735W?off=8skatnnb&bid=1776294335191" class="cta-primary" onclick="fbq('track','InitiateCheckout')">Inizia il tuo percorso — €49 →</a>
-      <a href="#prezzi" class="cta-secondary">Scopri cosa include</a>
-    </div>
-    <div class="cta-note">Pagamento unico · Accesso per sempre · Garanzia 30 giorni</div>
-  </section>
-
-  <!-- proof bar -->
-  <div class="proof-bar">
-    <div class="proof-item">
-      <div class="proof-num">4.9</div>
-      <div class="proof-label">Valutazione</div>
-    </div>
-    <div class="proof-item">
-      <div class="proof-num">90</div>
-      <div class="proof-label">Giorni</div>
-    </div>
-    <div class="proof-item">
-      <div class="proof-num">5 min</div>
-      <div class="proof-label">Al giorno</div>
-    </div>
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#" class="logo">Risveglio <span>Sereno</span></a>
+    <a href="https://pay.hotmart.com/H105239735W?off=8skatnnb&bid=1776294335191" class="nav-cta" onclick="fbq('track','InitiateCheckout')">Inizia ora →</a>
   </div>
+</header>
 
-  <div class="divider"></div>
+<!-- HERO -->
+<section class="hero">
+  <div class="orb"></div>
+  <div class="wrap hero-inner">
+    <span class="badge"><span class="dot"></span>Garanzia 30 giorni soddisfatti o rimborsati</span>
+    <h1 class="h1">Smetti di sopravvivere al <em>rumore mentale.</em></h1>
+    <p class="sub">Il percorso di 90 giorni che trasforma l'ansia in calma, il sonno frammentato in riposo profondo — personalizzato per te.</p>
+    <div class="hero-cta-wrap">
+      <a href="https://pay.hotmart.com/H105239735W?off=8skatnnb&bid=1776294335191" class="btn-primary" onclick="fbq('track','InitiateCheckout')">
+        <span><span class="strike">€49</span>Inizia il tuo percorso — €19,90</span>
+        <span class="arrow">→</span>
+      </a>
+      <p class="micro"><b>Pagamento unico</b> · <b>Accesso per sempre</b> · Garanzia 30 giorni</p>
+    </div>
+    <div class="hero-proof">
+      <div class="stars-row">★ ★ ★ ★ ★</div>
+      <p class="quote-mini">"La mia ansia mattutina è scesa notevolmente in una settimana." — <b>Giulia M., Milano</b></p>
+    </div>
+    <a href="#dolori" class="scroll-ind">
+      <span>Scopri</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
+  </div>
+</section>
 
-  <!-- ═══ PAIN ═══ -->
-  <section class="sec fade">
-    <div class="sec-label">Ti riconosci?</div>
-    <h2 class="sec-title">Il tuo sistema nervoso ti sta chiedendo <em>aiuto.</em></h2>
+<!-- PROOF BAR -->
+<div class="proofbar">
+  <div class="wrap proofbar-inner">
+    <div class="proof-item"><div class="proof-n">4.9 ★</div><div class="proof-l">Valutazione</div></div>
+    <div class="proof-item"><div class="proof-n">90</div><div class="proof-l">Giorni di percorso</div></div>
+    <div class="proof-item"><div class="proof-n">5 min</div><div class="proof-l">Al giorno</div></div>
+  </div>
+</div>
+
+<!-- DORES -->
+<section id="dolori" class="alt">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Ti riconosci?</span>
+      <h2 class="h2">Non sei sola. E non è <em>colpa tua.</em></h2>
+      <p class="lead">Se senti anche una sola di queste cose, questo percorso è stato pensato per te.</p>
+    </div>
     <div class="pain-grid">
-      <div class="pain-item">
-        <div class="pain-x">✕</div>
-        <p><strong>Ti svegli già stanca/o</strong> — la notte non basta mai, il cervello non si spegne.</p>
-      </div>
-      <div class="pain-item">
-        <div class="pain-x">✕</div>
-        <p><strong>L'ansia ti anticipa tutto</strong> — il futuro pesa più del presente.</p>
-      </div>
-      <div class="pain-item">
-        <div class="pain-x">✕</div>
-        <p><strong>Hai già provato di tutto</strong> — meditazione, podcast, libri. Niente dura.</p>
-      </div>
+      <div class="pain-card reveal"><div class="pain-icon">✕</div><p class="pain-text">Ti svegli già stanca — la notte non basta mai, il cervello non si spegne.</p></div>
+      <div class="pain-card reveal"><div class="pain-icon">✕</div><p class="pain-text">L'ansia ti anticipa tutto — il futuro pesa più del presente.</p></div>
+      <div class="pain-card reveal"><div class="pain-icon">✕</div><p class="pain-text">Hai già provato di tutto — meditazione, podcast, libri. Niente dura.</p></div>
     </div>
-    <div class="pain-bridge">
-      <p>E se il problema non fossi tu, ma <strong>lo strumento?</strong></p>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ═══ HOW ═══ -->
-  <section class="sec fade">
-    <div class="sec-label">Come funziona</div>
-    <h2 class="sec-title">3 passi verso la <em>calma.</em></h2>
-    <div class="steps">
-      <div class="step">
-        <div class="step-n">1</div>
-        <div><h3>Racconta come stai</h3><p>Ogni giorno, il percorso ti chiede come ti senti. Da lì nasce la tua pratica.</p></div>
-      </div>
-      <div class="step">
-        <div class="step-n">2</div>
-        <div><h3>Ricevi la tua guida</h3><p>Una meditazione creata per te, per come ti senti in quel momento. Mai generica.</p></div>
-      </div>
-      <div class="step">
-        <div class="step-n">3</div>
-        <div><h3>Trasformati</h3><p>5 minuti al giorno. In 7 giorni senti la differenza. In 90, la calma è naturale.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ═══ TRANSFORMATION ═══ -->
-  <section class="sec fade">
-    <div class="sec-label">Il cambiamento</div>
-    <h2 class="sec-title">Da dove sei a dove puoi <em>arrivare.</em></h2>
-    <div class="transform-grid">
-      <div class="t-col before">
-        <div class="t-col-label">Prima</div>
-        <ul>
-          <li><span class="dot"></span>Ansia costante</li>
-          <li><span class="dot"></span>Sonno frammentato</li>
-          <li><span class="dot"></span>Reattività emotiva</li>
-          <li><span class="dot"></span>Mente affollata</li>
-        </ul>
-      </div>
-      <div class="t-col after">
-        <div class="t-col-label">Dopo 90 giorni</div>
-        <ul>
-          <li><span class="dot"></span>Calma radicata</li>
-          <li><span class="dot"></span>Sonno rigenerante</li>
-          <li><span class="dot"></span>Risposta consapevole</li>
-          <li><span class="dot"></span>Chiarezza mentale</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ═══ TESTIMONIALS ═══ -->
-  <section class="sec fade">
-    <div class="sec-label">Cosa dicono</div>
-    <h2 class="sec-title">Risultati <em>reali.</em></h2>
-    <div class="reviews" id="reviewsContainer">
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ═══ PRICING ═══ -->
-  <section class="sec pricing-sec" id="prezzi">
-    <div class="sec-label">Il tuo investimento</div>
-    <h2 class="sec-title">Inizia <em>oggi.</em></h2>
-    <div class="pricing-cards">
-      
-      <div class="p-card full fade">
-        <div class="p-tag">Più popolare</div>
-        <div class="p-price"><span class="small">€</span>49</div>
-        <div class="p-desc">Pagamento unico · Per sempre</div>
-        <div class="p-features">
-          <div class="p-feat"><div class="ck"><svg viewBox="0 0 10 10"><polyline points="1,5 4,8 9,2"/></svg></div>Meditazioni personalizzate illimitate</div>
-          <div class="p-feat"><div class="ck"><svg viewBox="0 0 10 10"><polyline points="1,5 4,8 9,2"/></svg></div>9 Masterclass Audio</div>
-          <div class="p-feat"><div class="ck"><svg viewBox="0 0 10 10"><polyline points="1,5 4,8 9,2"/></svg></div>5 Percorsi di studio</div>
-          <div class="p-feat"><div class="ck"><svg viewBox="0 0 10 10"><polyline points="1,5 4,8 9,2"/></svg></div>Piano giornaliero su misura</div>
-          <div class="p-feat"><div class="ck"><svg viewBox="0 0 10 10"><polyline points="1,5 4,8 9,2"/></svg></div>Accesso vitalizio + aggiornamenti</div>
-          <div class="p-feat"><div class="ck"><svg viewBox="0 0 10 10"><polyline points="1,5 4,8 9,2"/></svg></div>Garanzia 30 giorni</div>
-        </div>
-        <a href="https://pay.hotmart.com/H105239735W?off=8skatnnb&bid=1776294335191" class="p-btn" onclick="fbq('track','InitiateCheckout')">Accesso completo — €49 →</a>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ═══ GUARANTEE ═══ -->
-  <section class="sec fade">
-    <div class="guarantee">
-      <div style="font-size:2rem">🛡️</div>
-      <h3>30 giorni di garanzia</h3>
-      <p>Se non senti un cambiamento reale, ti rimborsiamo il 100%. Nessuna domanda, nessuna complicazione.</p>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ═══ FAQ ═══ -->
-  <section class="sec fade">
-    <div class="sec-label">Domande</div>
-    <h2 class="sec-title">Hai <em>dubbi?</em></h2>
-    <div class="faq-list">
-      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Devo pagare ogni mese?</span><span class="tog">+</span></div><div class="faq-a"><div class="faq-a-inner">No. Paghi una sola volta €49 e hai accesso per sempre. Nessun abbonamento, nessun rinnovo. Se non sei soddisfatto, hai 30 giorni per richiedere il rimborso completo.</div></div></div>
-      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Non ho mai meditato. Va bene?</span><span class="tog">+</span></div><div class="faq-a"><div class="faq-a-inner">Perfetto. Le sessioni partono da 5 minuti e ti guidano passo dopo passo. Non serve esperienza.</div></div></div>
-      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Come funziona la personalizzazione?</span><span class="tog">+</span></div><div class="faq-a"><div class="faq-a-inner">Ogni giorno ti viene chiesto come ti senti. In base alla tua risposta, viene creata una meditazione unica per il tuo stato emotivo. Non riceverai mai due sessioni uguali.</div></div></div>
-      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Funziona su iPhone e Android?</span><span class="tog">+</span></div><div class="faq-a"><div class="faq-a-inner">Sì. Funziona dal browser su qualsiasi dispositivo. Non c'è niente da scaricare.</div></div></div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ═══ FINAL CTA ═══ -->
-  <section class="final-cta fade">
-    <h2 class="sec-title" style="margin-bottom:8px">La pace interiore è una <em>scelta.</em></h2>
-    <p style="font-size:0.82rem;color:var(--text2);margin-bottom:24px">Pagamento unico. Accesso per sempre. Zero rischio.</p>
-    <div class="cta-group">
-      <a href="https://pay.hotmart.com/H105239735W?off=8skatnnb&bid=1776294335191" class="cta-primary" onclick="fbq('track','InitiateCheckout')">Inizia il tuo percorso — €49 →</a>
-    </div>
-    <div class="cta-note" style="margin-top:12px">Garanzia 30 giorni · Pagamento sicuro · Accesso immediato</div>
-  </section>
-
-  <footer>
-    <p style="margin-bottom:8px"><span class="nav-dot" style="display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--gold)"></span> Risveglio Sereno</p>
-    <p>Il percorso di 90 giorni verso la pace interiore.</p>
-    <p style="margin-top:12px"><a href="#">Privacy</a> · <a href="#">Termini</a> · <a href="#">Contatti</a></p>
-  </footer>
-
-  <!-- STICKY BOTTOM -->
-  <div class="sticky-b" id="stickyB">
-    <div class="sb-text">
-      <div class="sb-title">Risveglio Sereno</div>
-      <div class="sb-sub">Solo €49 · Garanzia 30 giorni</div>
-    </div>
-    <a href="https://pay.hotmart.com/H105239735W?off=8skatnnb&bid=1776294335191" class="sb-btn" onclick="fbq('track','InitiateCheckout')">Inizia ora</a>
+    <p class="pivot reveal">E se il problema non fossi tu, ma lo strumento sbagliato?</p>
   </div>
+</section>
 
-  <script>
-    // Insert testimonial photos
-    const reviewData = [
-      { text: '"Dopo 7 giorni dormivo meglio. Dopo 30, l\'ansia mattutina era scomparsa. Non pensavo fosse possibile."',
-        name: 'Giulia M.', loc: 'Milano, IT', initial: 'G', photoIdx: 0 },
-      { text: '"Ho provato Calm, Headspace, podcast. Niente durava. Con Risveglio Sereno sono alla settimana sei senza saltare un giorno."',
-        name: 'Marco T.', loc: 'Roma, IT', initial: 'M', photoIdx: 1 },
-      { text: '"Dormivo male da anni. Tre settimane di pratica e mi sveglio riposata. Vale ogni centesimo."',
-        name: 'Anna B.', loc: 'Torino, IT', initial: 'A', photoIdx: 2 }
-    ];
-    const photoData = ['data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAAAAAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABkAGQDASIAAhEBAxEB/8QAHAAAAgMBAQEBAAAAAAAAAAAABAYABQcDAgEI/8QAOhAAAgEDAwEFBgQEBQUAAAAAAQIDAAQRBRIhMQYTQVFhFCJxgZGhMkJSsQcWwdEVI+Hw8SRDU2Jy/8QAGQEAAgMBAAAAAAAAAAAAAAAAAwQBAgUA/8QAIREAAgICAgIDAQAAAAAAAAAAAAECEQMhBDESQRMiMzL/2gAMAwEAAhEDEQA/AJEDDM8i8E16a+kXxqxu47C3yHmdceBiYf0qhutQ0+PO0zN8Ex+9FcbApoIbUG8RXFtQ46UNp00OpX3coGXABIYZJGccUbPb2yoyREFicDeOpoM6j2EgvIWtS1qV9ywzYI8BkClm4uLt5Dvmkz6vTRdac0ztjAIODt8PiOoqjvLCWDO9SY/H09aGpIN4UD2+pX9sRh3Kj5iruz1pLkbZcI/n4Glee1khY7SR5c1Ld5d2GySPE1zIodi/rXNnqlt7iYMq96RgjCnkEeVHNOK5bKtUdy9eN9CNcYz1rn7ST6VKRAduqUEJMipVqIs3f+JDRLNa7VXvADvOOo9azW80/dLMijgLuFOfbec3XaCdAchSIwPtVRexCKO8f9EW3nzp6EaghWUvsUvZTTZRqMepkEQwknOOvGMUPrFjJqeoyeyhu7B8OgNNPZe6jn065sicFFyB6YH+tXVlpkEWkrKgBLSNlvPHFI5puLbHMEFLQo2mnO9skd05Nwgws2cEjyJ/r9a8z6bHMhinQB+QDjrTO9shOQKDvbU93lRkj71nvJbNH4aRnl1pQR2hkG0rnaT4jyqklshG24Docj1HlTjqjg5jYj/1Ydf+RStLNhyre7z0PQ+o8qPCTFpRRwTDe51IGR6j+9dZWYKCqllxnIoaRtrZXgg5BFGW8kc6mPoTyPLPlV06KNWC98G48fI1Fcl8bT8auOzj6amvW3+KwCayL93MCSCoPG75Hmtjvv4caG9lN7FAYZwhaNmfcuccZHkaYir6F267MLA4qUzz6MUlwqbRgHFSoskcLpjd6+GbktKXP70DrMwXTZx4zTYHwFHw86pNIfyRM314qn12XuYLL3Vb8UhVuhrRYj7K/s47r2jt4d5QTN3T/A/7FaNc3VvY6baWLpKhTJ7wr7pyfOsltb72fWILrOAkoY48K0nVdLurtJbz2ktFgRwoBjb45Pn9qz+Wt7H+K6YUQqKW8OtLN7PLcXLNcTFbVT7saHG7HmRVw0VxaaVDazSs8u3JLDBwTwPpXOKzAAaLggFcjyNZipM19yQpXsmn6nGbW3jMM/5MZAb0OfH1pWvLWWPdDcwPkddy4P1rVodEs43D90uQcg9ear+0NlA9qSVGalZEnSKPC2rfZkrxLHnDS48iM4rxbZ747QeDuz50zW+mi4vJLduFP4W8vjVdHara3wMg2ruKPxwKOp+hVwo9nu3gluApL7N20eJHUfSt1/h32gOtdmLdJnPf2yiNierJ+VvoCPiKw7Z7JdlCfdfkH9jV3o/aH+Vgt1HE0ye9GIR4g8/ZsmjY5tdC+SFjXeQYupFx+EkfepSTP2+1GWZnTTYQpOffck/PGKlXqQOx7gb/ADtSf9Kqgqg7St/1MMQ/LEo+tXNs++31GQfnu9o+VLfaKcNrcqfpKr9hT/kJpFJHCJLuMH8JcD+/2rbxLEml2xDAEsTjwHQViULncWUAlRkfWtLhuHu9Ls13e9NEuPVh1/Y/Ss/lvo0OHXkddamJvZJGkXBJOSelcbK+DMybdygZLLyKMmtre5tkI06aZ0ALsE3Y8v2oKQ3VshK6fKiDP4yFA4zSDVo1oa2WEkqbMqQaXdTZrgMADgHmrazaW5DPLCkS5wu1slvOuFzGsCzSP0wP60JaYSUrQpG6trG8ndwC/d4UefPWq7WbbZqMhx7k/JPkw5/Y1xnVrzVXYfgztX18/wDfrVtqBFy0pOMBuD8sfvRumhJu7F8hriJVbPeRcHjqP9K8mZAJIrhgvGQT0zxXZlZW3jhgcH+hoHVMMbeZcAOTG6+WOlMY/wCkL5Fpng3Fn43EX1qUAbK0Y5MS5PlUpsUNb0o7tEjc/wDdu2b7ilHXZg+v3GPCTH0FN+lDboWkr+tmf7n+1JaRe3a/O8gJhWZt+DjOc4A+h+ABorYFLYPbQB4GmuJjb25yA+3JYjwUePx6CtEII7K2U0AKGKNWXJ5U8EZ9eazWeY6trQSTCQKcCOPgIg6Ko+3xOT41oqX8UnZy4jV0LRlAwQ5Cs3O0fAAD5UlyXaQ5x1TGLS79tb0AT2LASROVlRSQVPjjHgev/FV9zZ3E0uZS2fHLFifmelIHZTtn/LGpTmZJJLG6ASQJ1Ug8MPhyMetN8XbnSNYvxZ6fI0lwwzhoyg+ppXJCUeujTw5k403stQRbx8kDA2oPU0va9fG5c2tscknBI8BRs9jf3MpMjY8AqnoK9Lovs8W8qS3XJoKpbLtt6FcWotirngghFH3J+leG/wAwSDHPU8efNGa2vsUcRl4DscDHqBVRHqMcupXS7sxY7v4YNGStWKy06Arp+6uyhPDYpc1KVppO4ikKlJWbI+AH96tteuvZrgOCCVWlWOSQ3Ekrcl80xij7F8kvQfHc3UaBWtbWUj8zJyfpUqRKzRgmpR7AUbLaELp2jxqQdtvnrx0JpV1xE0O0FqrZuZF7yU/p3c/UjHwGB50T2b1hUluRLGZhapK8MZ6HoQD6DJNKevXstxJJNM5eWVizE9SaI2DiqKgSs05bcQCcHB5NOVvqMGm9lBahwbmaQuy45HGBmlrTNkS973W5wM7j0Fe5Q0sjSMSWJyaHOKloJB1s8LF3iOT0HI9KqrK/l0vXVuouqMMjzHlTDChWykbHzpSlO67kPma5q1TLJtOz9O9nr211rTLfUIDmORfHghuhB+BrvrV7p+l2ntGoXSQQjqSCT9BzVR2GSCDs1ZQ2wPd92GyepJ5JNI38UL+6g7Qy2cV1J7NPbxPJDn3Sw3AcfD96y8eNTyOJq5MjhjUvYF2i7Qrrl2ZoUMdpE4WBW6kDkk+ppVtbiRblgzHazH5c5PNGdz3cGzqR7vzxz9zQM+TlVI8hj71oRxpKkZzyNu2BanN30venBBYZ+fSiLVbdgOBnzxXC6t82kxH6dw+VDQKxhB3EetESoE3ZfLarj3ehqUHBeskQVjkjxzUriBw7CwpPrF/vyQlpKwHh0A/rSvrnFxjwFSpV/ZRdHy1kY28aZ4OaNgUNjNSpUF0EP7tpMB4A/tSSOZn/APqpUqGSj9GdhQB2Z08D/wACn7VnPbdzcdv7wS+8ElVAPRUGKlSs/j/rI0eR+USnc5t8nqTzQTgYNSpWijOPiKHG0jggg/SvE1jFDYxuhbOAMZqVKg4rehPNSpUrjj//2Q==', 'data:image/jpeg;base64,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', 'data:image/jpeg;base64,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'];
+<!-- COME FUNZIONA -->
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Come funziona</span>
+      <h2 class="h2">Tre passi. <em>Una nuova vita.</em></h2>
+      <p class="lead">Niente meditazioni generiche. Ogni giorno, il percorso si adatta a come ti senti.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num">1</div>
+        <div><h3 class="step-title">Ascolta te stessa</h3><p class="step-desc">Ogni giorno ti chiediamo come stai. Da lì <b>nasce la tua pratica</b>, costruita sul tuo stato reale.</p></div>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">2</div>
+        <div><h3 class="step-title">Ricevi la tua guida</h3><p class="step-desc">Una meditazione creata <b>per come ti senti oggi</b>. Mai generica. Mai uguale a quella di ieri.</p></div>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">3</div>
+        <div><h3 class="step-title">Trasformati</h3><p class="step-desc"><b>5 minuti al giorno.</b> In 7 giorni senti la differenza. In 90, è il tuo nuovo normale.</p></div>
+      </div>
+    </div>
 
-    const rc = document.getElementById('reviewsContainer');
-    reviewData.forEach((r, i) => {
-      const hasPhoto = photoData[i] && photoData[i] !== 'PLACEHOLDER';
-      const avatarHTML = hasPhoto
-        ? `<img class="review-avatar" src="${photoData[i]}" alt="${r.name}">`
-        : `<div class="review-avatar" style="display:flex;align-items:center;justify-content:center;background:var(--gold-d);font-family:var(--serif);font-weight:600;color:var(--gold)">${r.initial}</div>`;
-
-      rc.innerHTML += `
-        <div class="review">
-          <p class="review-text">${r.text}</p>
-          <div class="review-author">
-            ${avatarHTML}
-            <div>
-              <div class="review-name">${r.name}</div>
-              <div class="review-meta">✓ Verificato · ${r.loc} · <span class="stars">★★★★★</span></div>
+    <div class="mockup-wrap reveal">
+      <div class="phone" aria-hidden="true">
+        <div class="phone-screen">
+          <div class="ps-top">Giorno 12 · 90</div>
+          <div class="ps-greet">Benvenuta nel tuo<br>spazio interiore</div>
+          <div class="ps-card">
+            <div class="ps-label">Meditazione di oggi</div>
+            <div class="ps-title">Il momento presente è casa</div>
+            <div class="ps-desc">Creata per te, basata sul tuo stato di stamattina.</div>
+            <div class="ps-play">
+              <div class="ps-play-ico">▶</div>
+              <div class="ps-play-text">5 min · Ascolta ora</div>
             </div>
           </div>
-        </div>`;
-    });
+          <div class="ps-mini-grid">
+            <div class="ps-mini"><div class="ps-mini-n">12</div><div class="ps-mini-l">Giorni</div></div>
+            <div class="ps-mini"><div class="ps-mini-n">↓42%</div><div class="ps-mini-l">Ansia</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    // Phone mood cycling
-    const moods = document.querySelectorAll('.ph-mood-btn');
-    const titles = ['Respiro della Calma', 'Sonno Profondo', 'Rilascio Emotivo'];
-    const descs = ['7 min · Per la tua ansia di oggi', '10 min · Per un riposo rigenerante', '5 min · Per lasciare andare la tensione'];
-    let mi = 0;
-    setInterval(() => {
-      mi = (mi + 1) % 3;
-      moods.forEach((m, i) => m.classList.toggle('active', i === mi));
-      document.getElementById('medTitle').textContent = titles[mi];
-      document.getElementById('medDesc').textContent = descs[mi];
-    }, 3000);
+<!-- TRASFORMAZIONE -->
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Il cambiamento</span>
+      <h2 class="h2">Prima. <em>E dopo.</em></h2>
+      <p class="lead">Non una promessa vuota. Un percorso strutturato che misura i tuoi progressi, giorno per giorno.</p>
+    </div>
+    <div class="transform-grid">
+      <div class="tcol before reveal">
+        <h3>Oggi</h3>
+        <ul>
+          <li>Rumore mentale 24/7</li>
+          <li>Sonno frammentato, stanchezza costante</li>
+          <li>Reazioni impulsive che poi rimpiangi</li>
+          <li>"Devo imparare a conviverci"</li>
+        </ul>
+      </div>
+      <div class="tcol after reveal">
+        <h3>Tra 90 giorni</h3>
+        <ul>
+          <li>Pause di silenzio interiore, ogni giorno</li>
+          <li>Riposo profondo, energia al risveglio</li>
+          <li>Risposte consapevoli, non reazioni</li>
+          <li>"So come tornare al mio centro"</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-    // FAQ
-    function toggleFaq(el) {
-      const open = el.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-      if (!open) el.classList.add('open');
-    }
+<!-- DEPOIMENTOS -->
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Chi l'ha già fatto</span>
+      <h2 class="h2">Storie vere. <em>Risultati reali.</em></h2>
+    </div>
+    <div class="tests">
+      <div class="test reveal">
+        <div class="test-stars">★ ★ ★ ★ ★</div>
+        <p class="test-text">"Ero scettica all'inizio. Ma dopo la prima settimana di meditazioni personalizzate ho capito che non era l'ennesima app. La mia ansia mattutina è scesa notevolmente."</p>
+        <div class="test-author">
+          <div class="test-avatar">G</div>
+          <div class="test-info">
+            <span class="test-name">Giulia M.</span>
+            <span class="test-city">Milano, IT</span>
+          </div>
+        </div>
+      </div>
+      <div class="test reveal">
+        <div class="test-stars">★ ★ ★ ★ ★</div>
+        <p class="test-text">"Ho provato Calm, Headspace, podcast infiniti. Niente durava più di tre giorni. Con Risveglio Sereno sono alla settimana sei e non ho saltato un giorno."</p>
+        <div class="test-author">
+          <div class="test-avatar">M</div>
+          <div class="test-info">
+            <span class="test-name">Marco T.</span>
+            <span class="test-city">Roma, IT</span>
+          </div>
+        </div>
+      </div>
+      <div class="test reveal">
+        <div class="test-stars">★ ★ ★ ★ ★</div>
+        <p class="test-text">"Dormivo male da anni. Dopo tre settimane di pratica quotidiana, mi sveglio riposata. Al prezzo di oggi, è un regalo che si fa a sé stessi."</p>
+        <div class="test-author">
+          <div class="test-avatar">A</div>
+          <div class="test-info">
+            <span class="test-name">Anna B.</span>
+            <span class="test-city">Torino, IT</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    // Sticky bar
-    const sb = document.getElementById('stickyB');
-    window.addEventListener('scroll', () => {
-      sb.classList.toggle('show', window.scrollY > 500);
-    }, { passive: true });
+<!-- OFERTA + PREZZO -->
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Il tuo investimento</span>
+      <h2 class="h2">Tutto quello che ricevi. <em>Per sempre.</em></h2>
+    </div>
+    <div class="price-card reveal">
+      <span class="price-tag">Offerta di lancio</span>
+      <h3 class="price-title">Risveglio Sereno — Percorso 90 Giorni</h3>
+      <p class="price-sub">Accesso vitalizio. Nessun abbonamento. Nessuna sorpresa.</p>
+      <ul class="includes">
+        <li>Accesso illimitato al percorso completo di 90 giorni</li>
+        <li>Meditazioni personalizzate ogni giorno, create sul tuo stato reale</li>
+        <li>Biblioteca di approfondimenti (Eckhart Tolle, Marco Aurelio, e altri)</li>
+        <li>Diario privato — il tuo Spazio Sicuro per riflettere</li>
+        <li>Masterclass esclusive in audio e video</li>
+        <li>Aggiornamenti gratuiti, per sempre</li>
+      </ul>
+      <div class="price-box">
+        <div class="price-old">€49</div>
+        <div class="price-now"><sup>€</sup>19,90</div>
+        <p class="price-note">Pagamento unico · Accesso immediato</p>
+      </div>
+      <a href="https://pay.hotmart.com/H105239735W?off=8skatnnb&bid=1776294335191" class="btn-primary" style="max-width:none;width:100%" onclick="fbq('track','InitiateCheckout')">
+        <span>Sì, voglio iniziare ora — €19,90</span>
+        <span class="arrow">→</span>
+      </a>
+      <p class="micro" style="text-align:center;margin-top:14px">🛡️ Garanzia 30 giorni soddisfatti o rimborsati</p>
+    </div>
+  </div>
+</section>
 
-    // Fade in
-    const obs = new IntersectionObserver(entries => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); obs.unobserve(e.target); }});
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade').forEach(el => obs.observe(el));
-  </script>
+<!-- GARANZIA -->
+<section>
+  <div class="wrap">
+    <div class="guarantee reveal">
+      <div class="shield">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+      </div>
+      <h3>30 giorni. <em class="italic">Zero rischio.</em></h3>
+      <p>Prova Risveglio Sereno per 30 giorni interi. Se non senti un cambiamento reale, ti rimborsiamo il 100% — senza domande, senza complicazioni. Tutto il rischio è nostro, non tuo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Domande frequenti</span>
+      <h2 class="h2">Le risposte che <em>stavi cercando.</em></h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item reveal">
+        <summary>Come funziona davvero il percorso di 90 giorni?</summary>
+        <div class="faq-body">Ogni giorno ti chiediamo come ti senti. In base alla tua risposta, ricevi una meditazione guidata di 5 minuti costruita sul tuo stato reale di quel momento. Non contenuti generici: ogni sessione è diversa, pensata per te. Progredisci giorno per giorno, con micro-obiettivi e un diario privato per segnare i tuoi progressi.</div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Quanto tempo mi serve al giorno?</summary>
+        <div class="faq-body">Solo 5 minuti. È l'unico impegno reale. Molte persone che avevano "sempre fallito" con altre app riescono a mantenere Risveglio Sereno proprio perché è sostenibile ogni giorno, anche nei più pieni.</div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>E se non sento nessun cambiamento?</summary>
+        <div class="faq-body">Hai 30 giorni interi per provare tutto. Se non noti un cambiamento reale, ti rimborsiamo il 100% senza domande. Scrivi una semplice email e il rimborso parte in 24 ore. Il rischio è nostro.</div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Posso usarlo anche se non ho mai meditato?</summary>
+        <div class="faq-body">Sì, è pensato esattamente per chi parte da zero — o per chi ha già provato senza successo. Non devi "saper meditare". Devi solo seguire la voce che ti guida, 5 minuti al giorno.</div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Su quali dispositivi posso accedere?</summary>
+        <div class="faq-body">Risveglio Sereno funziona su qualsiasi smartphone, tablet o computer con un browser. Nessuna app da scaricare. Accedi quando vuoi, dove vuoi, con il tuo account personale.</div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Il pagamento è sicuro?</summary>
+        <div class="faq-body">Sì. Il pagamento avviene su Hotmart, una delle piattaforme più sicure in Europa per i prodotti digitali. Supporta carta, PayPal e principali metodi italiani. L'accesso al percorso è immediato dopo l'acquisto.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section>
+  <div class="wrap cta-final reveal">
+    <span class="eyebrow">Il momento è adesso</span>
+    <h2 class="h2">Sì, <em>voglio la mia pace interiore.</em></h2>
+    <p class="lead">Non aspettare la prossima notte insonne, la prossima reazione che ti pentirai di aver avuto. Comincia oggi. Il tuo te stesso di tra 90 giorni ti ringrazierà.</p>
+    <a href="https://pay.hotmart.com/H105239735W?off=8skatnnb&bid=1776294335191" class="btn-primary" onclick="fbq('track','InitiateCheckout')">
+      <span><span class="strike">€49</span>Inizia ora — €19,90</span>
+      <span class="arrow">→</span>
+    </a>
+    <p class="micro" style="margin-top:14px">Pagamento unico · Accesso per sempre · Garanzia 30 giorni</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-logo">Risveglio Sereno</div>
+    <div class="footer-links">
+      <a href="/privacy">Privacy</a>
+      <a href="/termini">Termini</a>
+      <a href="mailto:supporto@risvegliosereno.com">Contatti</a>
+    </div>
+    <p class="footer-copy">© 2026 Risveglio Sereno · Tutti i diritti riservati</p>
+  </div>
+</footer>
+
+<!-- STICKY BAR -->
+<div class="sticky" id="sticky">
+  <div class="sticky-inner">
+    <div class="sticky-label">
+      <span class="sticky-price"><span class="strike">€49</span>€19,90</span>
+      <span class="sticky-desc">Pagamento unico · Garanzia 30 giorni</span>
+    </div>
+    <a href="https://pay.hotmart.com/H105239735W?off=8skatnnb&bid=1776294335191" class="sticky-btn" onclick="fbq('track','InitiateCheckout')">Inizia ora →</a>
+  </div>
+</div>
+
+<script>
+// Stars
+(function(){
+  const c=document.getElementById('stars');
+  const n=60;
+  for(let i=0;i<n;i++){
+    const s=document.createElement('div');
+    s.className='star';
+    const size=Math.random()*2+1;
+    s.style.width=size+'px';
+    s.style.height=size+'px';
+    s.style.left=Math.random()*100+'%';
+    s.style.top=Math.random()*100+'%';
+    s.style.animationDelay=(Math.random()*4)+'s';
+    s.style.animationDuration=(3+Math.random()*3)+'s';
+    c.appendChild(s);
+  }
+})();
+
+// Fade-in on scroll
+(function(){
+  const io=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}});
+  },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+})();
+
+// Sticky bar on scroll
+(function(){
+  const s=document.getElementById('sticky');
+  let shown=false;
+  window.addEventListener('scroll',()=>{
+    const y=window.scrollY;
+    if(!shown && y>480){s.classList.add('show');shown=true}
+    else if(shown && y<300){s.classList.remove('show');shown=false}
+  },{passive:true});
+})();
+</script>
 </body>
 </html>
