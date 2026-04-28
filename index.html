@@ -3,42 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#06060a">
 <title>Risveglio Sereno — Trasforma l'ansia in sonno profondo in 90 giorni</title>
 <meta name="description" content="Il percorso di 90 giorni che trasforma l'ansia in calma e il sonno frammentato in riposo profondo. Personalizzato per te. 5 minuti al giorno. Garanzia 30 giorni.">
-<meta name="theme-color" content="#06060a">
 <meta property="og:title" content="Risveglio Sereno — La tua pace interiore in 90 giorni">
 <meta property="og:description" content="Non riesci a dormire? In 90 giorni trasformi l'ansia in sonno profondo. 5 minuti al giorno. Garanzia 30 giorni.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://risvegliosereno.com">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%95%AF%EF%B8%8F%3C/text%3E%3C/svg%3E">
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init','1607077463849547');
-fbq('track','PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1607077463849547&ev=PageView&noscript=1"/></noscript>
-<!-- End Meta Pixel Code -->
-
-<!-- Microsoft Clarity -->
-<script type="text/javascript">
-(function(c,l,a,r,i,t,y){
-  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-})(window,document,"clarity","script","wctpcwte36");
-</script>
-<!-- End Microsoft Clarity -->
-
+<!-- Fonts: preconnect + non-blocking load -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Outfit:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Outfit:wght@400;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Outfit:wght@400;600&display=swap"></noscript>
 
 <style>
 /* ─────────── Reset ─────────── */
@@ -80,9 +59,8 @@ body{
   color:var(--text);
   background:var(--bg-primary);
   overflow-x:hidden;
-  padding-bottom:80px; /* sticky bar */
+  padding-bottom:80px;
   -webkit-font-smoothing:antialiased;
-  text-rendering:optimizeLegibility;
 }
 h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:700;line-height:1.18;letter-spacing:-.01em}
 h1{font-size:clamp(34px,8vw,64px)}
@@ -112,23 +90,21 @@ section{position:relative;padding:64px 0}
 .btn-ghost:hover{background:var(--gold-glow);color:var(--gold-light);border-color:var(--gold)}
 .btn-large{height:64px;padding:0 36px;font-size:17px}
 
-/* ─────────── Nav ─────────── */
+/* ─────────── Nav — sem backdrop-filter ─────────── */
 .nav{
   position:fixed;top:0;left:0;right:0;z-index:50;height:60px;
-  background:rgba(6,6,10,0.72);backdrop-filter:blur(20px) saturate(1.4);
-  -webkit-backdrop-filter:blur(20px) saturate(1.4);
+  background:rgba(6,6,10,0.97);
   border-bottom:1px solid var(--border);
 }
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:100%}
-.logo{display:flex;align-items:center;gap:10px;font-family:'Playfair Display',serif;font-size:18px;color:var(--text);letter-spacing:.02em}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Playfair Display',Georgia,serif;font-size:18px;color:var(--text);letter-spacing:.02em}
 .logo svg{width:24px;height:24px;flex-shrink:0}
 .nav .btn{height:40px;padding:0 18px;font-size:14px}
 
-/* ─────────── Testimonial bar (sec 2) ─────────── */
+/* ─────────── Testimonial bar — sem backdrop-filter ─────────── */
 .tbar{
   position:fixed;top:60px;left:0;right:0;z-index:49;
-  background:rgba(11,11,18,0.85);backdrop-filter:blur(16px);
-  -webkit-backdrop-filter:blur(16px);
+  background:rgba(11,11,18,0.98);
   border-bottom:1px solid var(--border);
   overflow:hidden;
 }
@@ -177,23 +153,30 @@ section{position:relative;padding:64px 0}
 }
 .badge .dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green)}
 
-/* Hero background fx */
+/* Hero background fx — apenas desktop */
 .orb{
-  position:absolute;width:280px;height:280px;border-radius:50%;
+  position:absolute;width:420px;height:420px;border-radius:50%;
   background:radial-gradient(circle,var(--gold) 0%,transparent 70%);
   filter:blur(60px);opacity:.35;
-  top:-40px;right:-60px;z-index:-1;
-  animation:float 8s ease-in-out infinite;
+  top:-80px;right:-80px;z-index:-1;
   pointer-events:none;
+  /* sem animação contínua — static no mobile */
 }
-@media(min-width:1024px){.orb{width:420px;height:420px;top:-80px;right:-80px}}
+@media(min-width:768px){
+  .orb{animation:float 8s ease-in-out infinite}
+}
+/* estrelas apenas em desktop — 60 spans desnecessários no mobile */
 .stars{position:absolute;inset:0;z-index:-2;pointer-events:none;overflow:hidden}
 .stars span{position:absolute;width:2px;height:2px;border-radius:50%;background:var(--gold-light);opacity:0;animation:twinkle 3s ease-in-out infinite}
+@media(max-width:767px){
+  .orb{display:none}
+  .stars{display:none}
+}
 
-/* ─────────── Proof bar (sec 4) ─────────── */
+/* ─────────── Proof bar ─────────── */
 .proof{padding:36px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--bg-secondary)}
 .proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:center}
-.proof-num{font-family:'Playfair Display',serif;font-size:clamp(22px,5vw,30px);color:var(--gold-light);font-weight:700;line-height:1}
+.proof-num{font-family:'Playfair Display',Georgia,serif;font-size:clamp(22px,5vw,30px);color:var(--gold-light);font-weight:700;line-height:1}
 .proof-label{font-size:12px;color:var(--text2);margin-top:6px;letter-spacing:.04em;text-transform:uppercase}
 
 /* ─────────── Section header ─────────── */
@@ -204,7 +187,7 @@ section{position:relative;padding:64px 0}
 .section-title{margin-bottom:14px}
 .section-lead{color:var(--text2);max-width:640px;font-size:17px}
 
-/* ─────────── Pain cards (sec 5) ─────────── */
+/* ─────────── Pain cards ─────────── */
 .pain-grid{display:grid;gap:14px;margin-top:36px}
 .pain-card{
   padding:22px;border-radius:var(--radius);
@@ -215,11 +198,11 @@ section{position:relative;padding:64px 0}
 .pain-card:hover{transform:translateX(4px);border-color:var(--gold);background:var(--bg-tertiary)}
 .pain-pivot{
   margin-top:48px;padding:32px 20px;text-align:center;
-  font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(20px,4.5vw,28px);
+  font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:clamp(20px,4.5vw,28px);
   color:var(--gold-light);line-height:1.4;
 }
 
-/* ─────────── Transformação (sec 6) ─────────── */
+/* ─────────── Trasformazione ─────────── */
 .compare{display:grid;grid-template-columns:1fr;gap:18px;margin-top:36px}
 @media(min-width:640px){.compare{grid-template-columns:1fr 1fr;gap:20px}}
 .compare-col{padding:24px;border-radius:var(--radius);background:var(--bg-secondary);border:1px solid var(--border)}
@@ -232,7 +215,7 @@ section{position:relative;padding:64px 0}
 .compare-col.before li::before{content:"✗";color:var(--red);font-weight:700;flex-shrink:0;width:18px}
 .compare-col.after li::before{content:"✓";color:var(--green);font-weight:700;flex-shrink:0;width:18px}
 
-/* ─────────── Come funziona (sec 7) ─────────── */
+/* ─────────── Come funziona ─────────── */
 .steps{display:grid;gap:18px;margin-top:36px}
 @media(min-width:1024px){.steps{grid-template-columns:repeat(3,1fr)}}
 .step{
@@ -245,13 +228,13 @@ section{position:relative;padding:64px 0}
   display:inline-flex;align-items:center;justify-content:center;
   width:44px;height:44px;border-radius:50%;
   background:var(--gold-glow);border:1px solid var(--border-strong);
-  color:var(--gold-light);font-family:'Playfair Display',serif;font-size:18px;font-weight:700;
+  color:var(--gold-light);font-family:'Playfair Display',Georgia,serif;font-size:18px;font-weight:700;
   margin-bottom:18px;
 }
 .step h3{margin-bottom:8px;font-size:20px}
 .step p{color:var(--text2);font-size:15px;line-height:1.55}
 
-/* ─────────── Depoimentos completos (sec 8) ─────────── */
+/* ─────────── Depoimentos ─────────── */
 .testimonials{display:grid;gap:22px;margin-top:36px}
 @media(min-width:1024px){.testimonials{grid-template-columns:repeat(3,1fr)}}
 .testimonial{
@@ -272,12 +255,12 @@ section{position:relative;padding:64px 0}
 .testimonial-meta .place{font-size:13px;color:var(--text2);margin-top:2px}
 .testimonial-stars{color:var(--gold);letter-spacing:2px;font-size:13px}
 .testimonial-quote{
-  font-family:'Playfair Display',serif;font-style:italic;
+  font-family:'Playfair Display',Georgia,serif;font-style:italic;
   font-size:16px;line-height:1.55;color:var(--text);
 }
 @media(min-width:768px){.testimonial-quote{font-size:17px}}
 
-/* ─────────── Oferta (sec 9) ─────────── */
+/* ─────────── Oferta ─────────── */
 .offer{
   margin-top:36px;
   padding:36px 28px;border-radius:var(--radius-lg);
@@ -294,11 +277,11 @@ section{position:relative;padding:64px 0}
 .offer-includes li{display:flex;align-items:flex-start;gap:12px;font-size:15.5px;color:var(--text)}
 .offer-includes li::before{content:"✓";color:var(--gold);font-weight:700;flex-shrink:0}
 .price-row{display:flex;align-items:baseline;gap:10px;margin-top:8px}
-.price{font-family:'Playfair Display',serif;font-size:clamp(48px,12vw,72px);color:var(--gold-light);font-weight:700;line-height:1;letter-spacing:-.02em}
+.price{font-family:'Playfair Display',Georgia,serif;font-size:clamp(48px,12vw,72px);color:var(--gold-light);font-weight:700;line-height:1;letter-spacing:-.02em}
 .price-sub{color:var(--text2);font-size:14px;margin-top:8px;margin-bottom:24px}
 .offer .btn{width:100%}
 
-/* ─────────── Garantia (sec 10) ─────────── */
+/* ─────────── Garantia ─────────── */
 .guarantee{
   margin-top:32px;
   padding:32px 28px;border-radius:var(--radius-lg);
@@ -314,7 +297,7 @@ section{position:relative;padding:64px 0}
 .guarantee h3{margin-bottom:6px}
 .guarantee p{color:var(--text2);font-size:15.5px;line-height:1.55}
 
-/* ─────────── FAQ (sec 11) ─────────── */
+/* ─────────── FAQ ─────────── */
 .faq{margin-top:32px;display:flex;flex-direction:column;gap:10px}
 .faq-item{border:1px solid var(--border);border-radius:var(--radius);background:var(--bg-secondary);overflow:hidden}
 .faq-q{
@@ -329,12 +312,12 @@ section{position:relative;padding:64px 0}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .32s var(--ease)}
 .faq-a-inner{padding:0 22px 20px;color:var(--text2);font-size:15px;line-height:1.6}
 
-/* ─────────── CTA final (sec 12) ─────────── */
+/* ─────────── CTA final ─────────── */
 .cta-final{text-align:center;padding:80px 0}
 .cta-final h2{margin-bottom:14px}
 .cta-final p{color:var(--text2);font-size:17px;max-width:540px;margin:0 auto 32px}
 
-/* ─────────── Footer (sec 13) ─────────── */
+/* ─────────── Footer ─────────── */
 .footer{
   border-top:1px solid var(--border);padding:32px 0;
   background:var(--bg-secondary);
@@ -346,11 +329,10 @@ section{position:relative;padding:64px 0}
 .footer-links a:hover{color:var(--gold-light)}
 .footer-copy{font-size:12px;color:var(--text3)}
 
-/* ─────────── Sticky bottom bar (sec 14) ─────────── */
+/* ─────────── Sticky — sem backdrop-filter ─────────── */
 .sticky{
   position:fixed;bottom:0;left:0;right:0;z-index:51;height:64px;
-  background:rgba(6,6,10,0.92);backdrop-filter:blur(20px) saturate(1.4);
-  -webkit-backdrop-filter:blur(20px) saturate(1.4);
+  background:rgba(6,6,10,0.98);
   border-top:1px solid var(--border-strong);
 }
 .sticky-inner{display:flex;align-items:center;justify-content:space-between;height:100%;gap:12px}
@@ -450,7 +432,7 @@ section{position:relative;padding:64px 0}
   </div>
 </section>
 
-<!-- ───────────────── 5. DORI — TI RICONOSCI? ───────────────── -->
+<!-- ───────────────── 5. TI RICONOSCI? ───────────────── -->
 <section>
   <div class="wrap fade-in">
     <span class="section-eyebrow">Ti riconosci?</span>
@@ -465,7 +447,7 @@ section{position:relative;padding:64px 0}
   </div>
 </section>
 
-<!-- ───────────────── 6. TRASFORMAZIONE PRIMA / DOPO ───────────────── -->
+<!-- ───────────────── 6. TRASFORMAZIONE ───────────────── -->
 <section style="background:var(--bg-secondary)">
   <div class="wrap fade-in">
     <span class="section-eyebrow">La trasformazione</span>
@@ -520,7 +502,7 @@ section{position:relative;padding:64px 0}
   </div>
 </section>
 
-<!-- ───────────────── 8. DEPOIMENTOS COMPLETOS ───────────────── -->
+<!-- ───────────────── 8. DEPOIMENTOS ───────────────── -->
 <section style="background:var(--bg-secondary)">
   <div class="wrap fade-in">
     <span class="section-eyebrow">Storie reali</span>
@@ -564,7 +546,7 @@ section{position:relative;padding:64px 0}
   </div>
 </section>
 
-<!-- ───────────────── 9. OFFERTA + PREZZO ───────────────── -->
+<!-- ───────────────── 9. OFFERTA ───────────────── -->
 <section>
   <div class="wrap fade-in">
     <span class="section-eyebrow">L'offerta</span>
@@ -666,7 +648,7 @@ section{position:relative;padding:64px 0}
   </div>
 </footer>
 
-<!-- ───────────────── 14. STICKY BOTTOM BAR ───────────────── -->
+<!-- ───────────────── 14. STICKY BAR ───────────────── -->
 <div class="sticky" role="region" aria-label="Acquisto rapido">
   <div class="wrap sticky-inner">
     <div class="sticky-left"><span class="dot"></span>Garanzia 30gg</div>
@@ -674,28 +656,32 @@ section{position:relative;padding:64px 0}
   </div>
 </div>
 
+<!-- ───────────────── JS ───────────────── -->
 <script>
 (function(){
-  // ─── Particles ───
-  var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (!prefersReducedMotion) {
-    var stars = document.querySelector('.stars');
-    if (stars) {
-      var count = 60;
-      var frag = document.createDocumentFragment();
-      for (var i = 0; i < count; i++) {
-        var s = document.createElement('span');
-        s.style.top = (Math.random() * 100) + '%';
-        s.style.left = (Math.random() * 100) + '%';
-        s.style.animationDuration = (2 + Math.random() * 3).toFixed(2) + 's';
-        s.style.animationDelay = (Math.random() * 3).toFixed(2) + 's';
-        frag.appendChild(s);
+  var isMobile = window.innerWidth < 768;
+
+  // Partículas: apenas desktop
+  if (!isMobile) {
+    var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!prefersReducedMotion) {
+      var stars = document.querySelector('.stars');
+      if (stars) {
+        var frag = document.createDocumentFragment();
+        for (var i = 0; i < 40; i++) {
+          var s = document.createElement('span');
+          s.style.top = (Math.random() * 100) + '%';
+          s.style.left = (Math.random() * 100) + '%';
+          s.style.animationDuration = (2 + Math.random() * 3).toFixed(2) + 's';
+          s.style.animationDelay = (Math.random() * 3).toFixed(2) + 's';
+          frag.appendChild(s);
+        }
+        stars.appendChild(frag);
       }
-      stars.appendChild(frag);
     }
   }
 
-  // ─── Fade-in on scroll ───
+  // Fade-in nas seções abaixo do fold
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function(entries){
       entries.forEach(function(e){
@@ -704,13 +690,13 @@ section{position:relative;padding:64px 0}
           io.unobserve(e.target);
         }
       });
-    }, {threshold: 0.15});
+    }, {threshold: 0.1});
     document.querySelectorAll('.fade-in').forEach(function(el){ io.observe(el); });
   } else {
     document.querySelectorAll('.fade-in').forEach(function(el){ el.classList.add('visible'); });
   }
 
-  // ─── FAQ accordion ───
+  // FAQ accordion
   document.querySelectorAll('.faq-item').forEach(function(item){
     var btn = item.querySelector('.faq-q');
     var ans = item.querySelector('.faq-a');
@@ -724,6 +710,32 @@ section{position:relative;padding:64px 0}
     });
   });
 })();
+</script>
+
+<!-- Meta Pixel — carrega depois do conteúdo -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1607077463849547');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1607077463849547&ev=PageView&noscript=1"
+/></noscript>
+
+<!-- Microsoft Clarity — carrega depois do conteúdo -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "wctpcwte36");
 </script>
 
 </body>
